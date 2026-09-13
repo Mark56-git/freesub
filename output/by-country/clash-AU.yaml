@@ -6,30 +6,31 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - Cloudfree
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  server: 104.18.155.229
+  port: 443
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: www.genflix.co.id.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /7586c69d3dc9
+    path: /au-do
     headers:
-      Host: 103.75.119.126
+      Host: www.genflix.co.id.r3xxe.eu.cc
 - name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  server: 103.169.142.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /7586c69d3dc9
+    path: /
     headers:
-      Host: 103.75.119.126
+      Host: vms.lifetime38.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
