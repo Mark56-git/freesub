@@ -5,101 +5,82 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  type: vless
-  server: 188.114.98.134
-  port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  type: vless
-  server: 104.18.42.54
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
   type: ss
   server: 46.17.40.234
   port: 50111
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  type: vless
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime54.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
+  type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
   type: vless
-  server: 172.64.52.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /casc
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  type: vless
-  server: 172.64.52.6
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
-  type: ss
-  server: 195.133.5.102
-  port: 50111
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
   type: ss
   server: 195.133.23.200
   port: 50111
   cipher: aes-256-gcm
   password: 81a20429165df87e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - Cloudfree
-  type: vless
-  server: 162.159.43.187
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 09 - Cloudfree
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - Cloudfree
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
+  type: ss
+  server: 195.133.5.102
+  port: 50111
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Cloudfree
+  type: ss
+  server: 195.58.48.137
+  port: 50111
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - Cloudfree
   type: vless
   server: 78.159.247.246
   port: 443
@@ -112,7 +93,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: 78.159.247.246
+      Host: sb2.hat.onl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,7 +108,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 08 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 09 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 10 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,6 +122,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 08 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 09 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 10 - Cloudfree
 rules:
 - MATCH,PROXIES

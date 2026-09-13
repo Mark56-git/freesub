@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - Cloudfree
+- name: 🇦🇿 AZ 01 - Cloudfree
   type: vless
-  server: 193.36.38.17
-  port: 443
-  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  server: basalam.horqen.ir
+  port: 21289
+  uuid: c12db015-a63c-43e5-a744-6398a90373b5
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: eded-52n.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: eded-52n.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - Cloudfree
+  - 🇦🇿 AZ 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - Cloudfree
+  - 🇦🇿 AZ 01 - Cloudfree
 rules:
 - MATCH,PROXIES

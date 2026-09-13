@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -17,34 +29,44 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
-  type: vless
-  server: 146.190.124.36
-  port: 74
-  uuid: d4d0d523-0c2a-4b9d-b630-0637f0b77904
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   type: vless
-  server: 57.129.52.47
-  port: 52014
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  server: 45.131.209.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 21d11336-4659-448a-a903-e5b7e597ea8a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +75,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +85,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

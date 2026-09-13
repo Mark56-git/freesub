@@ -29,7 +29,7 @@ proxies:
   servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 03 - Cloudfree
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -54,15 +54,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - Cloudfree
-  type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +64,6 @@ proxy-groups:
   - 🇧🇬 BG 03 - Cloudfree
   - 🇧🇬 BG 04 - Cloudfree
   - 🇧🇬 BG 05 - Cloudfree
-  - 🇧🇬 BG 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,6 +74,5 @@ proxy-groups:
   - 🇧🇬 BG 03 - Cloudfree
   - 🇧🇬 BG 04 - Cloudfree
   - 🇧🇬 BG 05 - Cloudfree
-  - 🇧🇬 BG 06 - Cloudfree
 rules:
 - MATCH,PROXIES

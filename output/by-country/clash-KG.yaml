@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇲 IM 01 - Cloudfree
+- name: 🇰🇬 KG 01 - Cloudfree
   type: vless
-  server: 185.162.229.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime61.workers.dev
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇲 IM 01 - Cloudfree
+  - 🇰🇬 KG 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇲 IM 01 - Cloudfree
+  - 🇰🇬 KG 01 - Cloudfree
 rules:
 - MATCH,PROXIES
