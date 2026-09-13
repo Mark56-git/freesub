@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - Cloudfree
+- name: 🇦🇲 AM 01 - Cloudfree
   type: vless
-  server: 104.18.28.234
-  port: 443
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - Cloudfree
+  - 🇦🇲 AM 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - Cloudfree
+  - 🇦🇲 AM 01 - Cloudfree
 rules:
 - MATCH,PROXIES

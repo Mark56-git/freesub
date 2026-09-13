@@ -6,13 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - Cloudfree
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 02 - Cloudfree
-  type: ss
   server: 154.46.31.106
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - Cloudfree
-  - 🇷🇴 RO 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - Cloudfree
-  - 🇷🇴 RO 02 - Cloudfree
 rules:
 - MATCH,PROXIES

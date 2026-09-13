@@ -7,7 +7,10 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - Cloudfree",
-        "🇨🇿 CZ 02 - Cloudfree"
+        "🇨🇿 CZ 02 - Cloudfree",
+        "🇨🇿 CZ 03 - Cloudfree",
+        "🇨🇿 CZ 04 - Cloudfree",
+        "🇨🇿 CZ 05 - Cloudfree"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - Cloudfree",
-        "🇨🇿 CZ 02 - Cloudfree"
+        "🇨🇿 CZ 02 - Cloudfree",
+        "🇨🇿 CZ 03 - Cloudfree",
+        "🇨🇿 CZ 04 - Cloudfree",
+        "🇨🇿 CZ 05 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
