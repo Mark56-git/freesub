@@ -5,66 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
-  type: vless
-  server: connect3.nyxserver.ir
-  port: 8444
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect3.nyxserver.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
   type: ss
   server: 188.132.174.236
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+- name: 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  type: ss
+  server: 185.39.204.3
+  port: 8098
+  cipher: chacha20-ietf-poly1305
+  password: PluSKSrbtxTvlVv7BOUwn4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
-  type: vless
-  server: app.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
-  type: vless
-  server: connect3.nyxserver.ir
-  port: 8444
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect3.nyxserver.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,10 +25,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,9 +32,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
 rules:
 - MATCH,PROXIES
