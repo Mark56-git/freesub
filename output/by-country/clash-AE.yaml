@@ -18,58 +18,30 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 104.24.219.225
+  port: 443
+  uuid: c2c3de71-5ec5-430c-b096-81969b16ff8d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdnfree.abdollahvand2.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  type: vless
-  server: 92.113.124.204
-  port: 18443
-  uuid: 43c62e6e-6c70-45c0-932c-81f15c4f25b3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
-  type: vless
-  server: 147.45.42.73
-  port: 20443
-  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      Host: cdnfree.abdollahvand2.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +50,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,7 +58,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 rules:
 - MATCH,PROXIES
