@@ -20,20 +20,6 @@ proxies:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 02 - Cloudfree
   type: vless
-  server: 104.18.80.149
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
-    headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
-- name: 🇺🇿 UZ 03 - Cloudfree
-  type: vless
   server: 172.67.210.146
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
@@ -46,7 +32,7 @@ proxies:
     path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
     headers:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🇺🇿 UZ 04 - Cloudfree
+- name: 🇺🇿 UZ 03 - Cloudfree
   type: vless
   server: 189.74.97.47
   port: 2087
@@ -67,7 +53,6 @@ proxy-groups:
   - 🇺🇿 UZ 01 - Cloudfree
   - 🇺🇿 UZ 02 - Cloudfree
   - 🇺🇿 UZ 03 - Cloudfree
-  - 🇺🇿 UZ 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +61,5 @@ proxy-groups:
   - 🇺🇿 UZ 01 - Cloudfree
   - 🇺🇿 UZ 02 - Cloudfree
   - 🇺🇿 UZ 03 - Cloudfree
-  - 🇺🇿 UZ 04 - Cloudfree
 rules:
 - MATCH,PROXIES
