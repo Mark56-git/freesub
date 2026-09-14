@@ -5,49 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Cloudfree
-  type: vmess
-  server: 95.85.233.138
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.170.140
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: INDEX.Arcane509.Workers.DEV
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: index.arcane509.workers.dev
 - name: 🇨🇿 CZ 02 - Cloudfree
   type: vless
-  server: 103.119.18.30
+  server: 162.159.153.4
   port: 443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
-    path: /proxyip=154.3.33.43
+    path: /
     headers:
-      Host: mianfei-73q.pages.dev
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇨🇿 CZ 03 - Cloudfree
   type: vless
-  server: 103.119.18.30
-  port: 443
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  server: 188.114.97.6
+  port: 2053
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   network: ws
   ws-opts:
-    path: /proxyip=154.3.33.43
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: mianfei-73q.pages.dev
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
