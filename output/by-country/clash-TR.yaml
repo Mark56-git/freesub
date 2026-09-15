@@ -1,0 +1,119 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  type: vless
+  server: 172.67.134.170
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
+  type: vless
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
+  type: vmess
+  server: 188.132.174.236
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
+  type: vless
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shop.neexbyte.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shop.neexbyte.ir
+- name: 🇹🇷 土耳其 (Turkey) 07 - Cloudfree
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: global.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BechBad.global.ssl.fastly.net
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 07 - Cloudfree
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 06 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 07 - Cloudfree
+rules:
+- MATCH,PROXIES

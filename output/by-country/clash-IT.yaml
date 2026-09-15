@@ -12,30 +12,32 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - Cloudfree
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 03 - Cloudfree
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 04 - Cloudfree
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 03 - Cloudfree
+  type: vless
+  server: 158.180.231.216
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇮🇹 意大利 (Italy) 04 - Cloudfree
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 05 - Cloudfree
   type: vless
@@ -45,18 +47,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 06 - Cloudfree
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +57,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
   - 🇮🇹 意大利 (Italy) 04 - Cloudfree
   - 🇮🇹 意大利 (Italy) 05 - Cloudfree
-  - 🇮🇹 意大利 (Italy) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,6 +67,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
   - 🇮🇹 意大利 (Italy) 04 - Cloudfree
   - 🇮🇹 意大利 (Italy) 05 - Cloudfree
-  - 🇮🇹 意大利 (Italy) 06 - Cloudfree
 rules:
 - MATCH,PROXIES

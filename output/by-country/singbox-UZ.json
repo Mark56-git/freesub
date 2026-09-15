@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇺🇿 UZ 01 - Cloudfree",
-        "🇺🇿 UZ 02 - Cloudfree"
+        "🇺🇿 UZ 02 - Cloudfree",
+        "🇺🇿 UZ 03 - Cloudfree",
+        "🇺🇿 UZ 04 - Cloudfree"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇿 UZ 01 - Cloudfree",
-        "🇺🇿 UZ 02 - Cloudfree"
+        "🇺🇿 UZ 02 - Cloudfree",
+        "🇺🇿 UZ 03 - Cloudfree",
+        "🇺🇿 UZ 04 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

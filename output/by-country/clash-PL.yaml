@@ -13,30 +13,46 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - Cloudfree
   type: vless
-  server: 178.95.170.115
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /4bc027a44532
+    path: /sync
     headers:
-      Host: 178.95.170.115
+      Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 03 - Cloudfree
   type: vless
-  server: 178.95.170.98
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /4bc027a44532
+    path: /sync
     headers:
-      Host: 178.95.170.98
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 04 - Cloudfree
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +61,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - Cloudfree
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
+  - 🇵🇱 PL 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +70,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - Cloudfree
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
+  - 🇵🇱 PL 04 - Cloudfree
 rules:
 - MATCH,PROXIES

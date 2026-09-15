@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - Cloudfree"
+        "🇷🇴 RO 01 - Cloudfree",
+        "🇷🇴 RO 02 - Cloudfree",
+        "🇷🇴 RO 03 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - Cloudfree"
+        "🇷🇴 RO 01 - Cloudfree",
+        "🇷🇴 RO 02 - Cloudfree",
+        "🇷🇴 RO 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
