@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - Cloudfree
+- name: 🇭🇺 HU 01 - Cloudfree
   type: vless
   server: 172.67.67.178
   port: 443
@@ -15,20 +15,20 @@ proxies:
   servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - Cloudfree
+  - 🇭🇺 HU 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - Cloudfree
+  - 🇭🇺 HU 01 - Cloudfree
 rules:
 - MATCH,PROXIES

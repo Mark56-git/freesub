@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇺🇿 UZ 01 - Cloudfree
   type: vless
-  server: 104.25.155.45
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    path: /755276b33b6f
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+      Host: 189.74.97.47
 - name: 🇺🇿 UZ 02 - Cloudfree
   type: vless
   server: 104.24.143.217
@@ -34,20 +33,21 @@ proxies:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 03 - Cloudfree
   type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  server: 172.67.210.146
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
     headers:
-      Host: 189.74.97.47
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 04 - Cloudfree
   type: vless
-  server: 172.67.210.146
+  server: 104.25.155.45
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
