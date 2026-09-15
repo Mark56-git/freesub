@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC 01 - Cloudfree",
-        "🇸🇨 SC 02 - Cloudfree"
+        "🇸🇨 SC 02 - Cloudfree",
+        "🇸🇨 SC 03 - Cloudfree",
+        "🇸🇨 SC 04 - Cloudfree"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC 01 - Cloudfree",
-        "🇸🇨 SC 02 - Cloudfree"
+        "🇸🇨 SC 02 - Cloudfree",
+        "🇸🇨 SC 03 - Cloudfree",
+        "🇸🇨 SC 04 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

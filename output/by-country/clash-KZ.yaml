@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Cloudfree
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 02 - Cloudfree
   type: vless
   server: kz3.zuoai.cf
   port: 443
@@ -24,11 +39,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - Cloudfree
+  - 🇰🇿 KZ 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - Cloudfree
+  - 🇰🇿 KZ 02 - Cloudfree
 rules:
 - MATCH,PROXIES
