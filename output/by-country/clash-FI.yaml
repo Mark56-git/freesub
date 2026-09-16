@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Cloudfree
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  server: 84.22.150.239
+  port: 444
+  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 - name: 🇫🇮 FI 02 - Cloudfree
   type: vless
   server: k2.cloud--vpn.site
@@ -29,16 +36,16 @@ proxies:
   type: vless
   server: 151.101.56.6
   port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: //---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
     headers:
-      Host: kayko.global.ssl.fastly.net
+      Host: c12.com
 - name: 🇫🇮 FI 04 - Cloudfree
   type: vless
   server: 151.101.56.6
@@ -50,23 +57,30 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: //---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
+    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 05 - Cloudfree
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: 151.101.56.6
+  port: 443
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hub-se-02.hanvpn.cc
+  servername: global.fastly.com
   network: ws
   ws-opts:
-    path: /se02-ws-8e47a
+    path: /
     headers:
-      Host: hub-se-02.hanvpn.cc
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 FI 06 - Cloudfree
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +91,7 @@ proxy-groups:
   - 🇫🇮 FI 03 - Cloudfree
   - 🇫🇮 FI 04 - Cloudfree
   - 🇫🇮 FI 05 - Cloudfree
+  - 🇫🇮 FI 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +102,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - Cloudfree
   - 🇫🇮 FI 04 - Cloudfree
   - 🇫🇮 FI 05 - Cloudfree
+  - 🇫🇮 FI 06 - Cloudfree
 rules:
 - MATCH,PROXIES

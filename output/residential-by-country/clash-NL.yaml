@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - Cloudfree
+- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - Cloudfree
   type: vless
-  server: 141.227.137.177
-  port: 2053
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kkkk-xcd.pages.dev
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - Cloudfree
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - Cloudfree
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES
