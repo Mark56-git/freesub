@@ -5,18 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Cloudfree
-  type: vmess
-  server: 36.133.78.37
-  port: 50017
-  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 02 - Cloudfree
   type: vless
-  server: v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -26,22 +16,21 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - Cloudfree
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 02 - Cloudfree
+  type: vless
+  server: 140.245.38.33
+  port: 2096
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /d46bf492
+    path: /class/season
     headers:
-      Host: ''
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - Cloudfree
   - 🇹🇭 TH 02 - Cloudfree
-  - 🇹🇭 TH 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - Cloudfree
   - 🇹🇭 TH 02 - Cloudfree
-  - 🇹🇭 TH 03 - Cloudfree
 rules:
 - MATCH,PROXIES

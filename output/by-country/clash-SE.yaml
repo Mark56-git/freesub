@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 AT 01 - Cloudfree
+- name: 🇸🇪 SE 01 - Cloudfree
   type: ss
-  server: 82.110.60.9
-  port: 19999
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 AT 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 AT 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 rules:
 - MATCH,PROXIES
