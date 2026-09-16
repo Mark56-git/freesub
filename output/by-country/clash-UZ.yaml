@@ -6,6 +6,48 @@ log-level: info
 proxies:
 - name: 🇺🇿 UZ 01 - Cloudfree
   type: vless
+  server: 104.24.143.217
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇺🇿 UZ 02 - Cloudfree
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 03 - Cloudfree
+  type: vless
+  server: 104.25.155.45
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇺🇿 UZ 04 - Cloudfree
+  type: vless
   server: 189.74.97.43
   port: 2087
   uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
@@ -17,7 +59,21 @@ proxies:
     path: /73b6faea2d00
     headers:
       Host: 189.74.97.43
-- name: 🇺🇿 UZ 02 - Cloudfree
+- name: 🇺🇿 UZ 05 - Cloudfree
+  type: vless
+  server: 172.67.210.146
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇺🇿 UZ 06 - Cloudfree
   type: vless
   server: 189.74.97.47
   port: 2087
@@ -30,19 +86,6 @@ proxies:
     path: /755276b33b6f
     headers:
       Host: 189.74.97.47
-- name: 🇺🇿 UZ 03 - Cloudfree
-  type: vless
-  server: 189.74.97.43
-  port: 2087
-  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /73b6faea2d00
-    headers:
-      Host: 189.74.97.43
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +94,9 @@ proxy-groups:
   - 🇺🇿 UZ 01 - Cloudfree
   - 🇺🇿 UZ 02 - Cloudfree
   - 🇺🇿 UZ 03 - Cloudfree
+  - 🇺🇿 UZ 04 - Cloudfree
+  - 🇺🇿 UZ 05 - Cloudfree
+  - 🇺🇿 UZ 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +105,8 @@ proxy-groups:
   - 🇺🇿 UZ 01 - Cloudfree
   - 🇺🇿 UZ 02 - Cloudfree
   - 🇺🇿 UZ 03 - Cloudfree
+  - 🇺🇿 UZ 04 - Cloudfree
+  - 🇺🇿 UZ 05 - Cloudfree
+  - 🇺🇿 UZ 06 - Cloudfree
 rules:
 - MATCH,PROXIES

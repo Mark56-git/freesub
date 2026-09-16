@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,29 +19,31 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /
     headers:
-      Host: cdn.snobvpn.online
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: f62a8f0e-f8db-48a6-8f52-84922aa63368
+  server: 104.21.67.122
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: novantunnel.tech
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
   type: vless
   server: 89.125.147.199
@@ -53,32 +55,21 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: a6dca797-9803-4f2c-ae45-e6bd8d0e9842
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   type: vless
   server: 89.125.147.199
   port: 443
@@ -89,8 +80,48 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+  type: vless
+  server: 146.70.37.253
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-xcd.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-xcd.pages.dev
+- name: 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -103,6 +134,88 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - Cloudfree
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - Cloudfree
+  type: vless
+  server: 172.67.221.230
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: novantunnel.tech
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 13 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - Cloudfree
+  type: vless
+  server: 213.176.112.136
+  port: 5222
+  uuid: 8d955d71-ed5d-4f4c-ae68-42d120f06861
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 15 - Cloudfree
+  type: vless
+  server: 207.148.99.230
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /test/company/library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇪 阿联酋 (UAE) 16 - Cloudfree
+  type: vless
+  server: 116.204.164.27
+  port: 7443
+  uuid: 00274dd7-7cee-420d-9942-b24d047611a7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,6 +229,14 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 11 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 12 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 13 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 14 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 15 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 16 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,5 +250,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 11 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 12 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 13 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 14 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 15 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 16 - Cloudfree
 rules:
 - MATCH,PROXIES

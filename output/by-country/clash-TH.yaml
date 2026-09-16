@@ -47,6 +47,36 @@ proxies:
     path: /d46bf492
     headers:
       Host: ''
+- name: 🇹🇭 TH 04 - Cloudfree
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
+- name: 🇹🇭 TH 05 - Cloudfree
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +85,8 @@ proxy-groups:
   - 🇹🇭 TH 01 - Cloudfree
   - 🇹🇭 TH 02 - Cloudfree
   - 🇹🇭 TH 03 - Cloudfree
+  - 🇹🇭 TH 04 - Cloudfree
+  - 🇹🇭 TH 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,5 +95,7 @@ proxy-groups:
   - 🇹🇭 TH 01 - Cloudfree
   - 🇹🇭 TH 02 - Cloudfree
   - 🇹🇭 TH 03 - Cloudfree
+  - 🇹🇭 TH 04 - Cloudfree
+  - 🇹🇭 TH 05 - Cloudfree
 rules:
 - MATCH,PROXIES
