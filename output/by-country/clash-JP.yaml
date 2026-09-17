@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Cloudfree
   type: vless
-  server: 207.148.112.220
-  port: 443
+  server: 210.152.85.154
+  port: 19364
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -15,102 +15,10 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /discuss?ed=2560
+    path: /collect/user/products?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 02 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 03 - Cloudfree
-  type: ss
-  server: jp-2.gsafevpnapi.com
-  port: 31870
-  cipher: aes-256-gcm
-  password: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - Cloudfree
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 09 - Cloudfree
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
   type: vless
   server: 138.2.59.96
   port: 10129
@@ -124,6 +32,110 @@ proxies:
     path: /movie/help/events?ed=2560
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 03 - Cloudfree
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /collect/user/products?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
+  type: vless
+  server: 167.179.111.237
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /act/player/search?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
+  type: vless
+  server: 104.238.148.149
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /about?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 07 - Cloudfree
+  type: vless
+  server: 104.156.238.23
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /bt/image/categories?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 08 - Cloudfree
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 09 - Cloudfree
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
+  type: vless
+  server: 107.191.53.84
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mia10.pages.dev
+  network: ws
+  ws-opts:
+    path: /TG:@MiaChatChannel
+    headers:
+      Host: mia10.pages.dev
 - name: 🇯🇵 日本 (Japan) 11 - Cloudfree
   type: vless
   server: 203.137.165.164
@@ -140,410 +152,33 @@ proxies:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 12 - Cloudfree
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  server: 207.148.112.220
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: qq
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 13 - Cloudfree
   type: vless
-  server: 104.238.148.149
+  server: 162.159.254.3
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /about?ed=2560
+    path: /tyxyws
     headers:
-      Host: cdn8848.776676.xyz
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 14 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - Cloudfree
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
-  type: vless
-  server: 45.142.166.211
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /knowledge?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 17 - Cloudfree
-  type: vless
-  server: 107.191.53.84
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia10.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia10.pages.dev
-- name: 🇯🇵 日本 (Japan) 18 - Cloudfree
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - Cloudfree
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: cc9082e4-9c7c-4cef-a0f5-963363bed638
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: weathered-mode-8f39.83-33c.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - Cloudfree
-  type: vless
-  server: 167.179.111.237
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /act/player/search?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
-  type: vless
-  server: 104.156.238.23
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /bt/image/categories?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 27 - Cloudfree
-  type: vless
-  server: 104.17.181.19
-  port: 8880
-  uuid: fe3b26ec-4bc0-464d-a7b9-2db72a89846e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: orange-base-2e09.87-c52.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 30 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 31 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 32 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 33 - Cloudfree
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 34 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 35 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 36 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 37 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 38 - Cloudfree
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 39 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 40 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 41 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 42 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 43 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 44 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 45 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 46 - Cloudfree
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 47 - Cloudfree
   type: vless
   server: 207.148.112.220
   port: 443
@@ -557,30 +192,156 @@ proxies:
     path: /discuss?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 48 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 15 - Cloudfree
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+  server: 167.179.111.237
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 49 - Cloudfree
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /act/player/search?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: firefox
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - Cloudfree
+  type: vless
+  server: 108.160.136.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 18 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
+  type: vless
+  server: 45.142.166.211
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /knowledge?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 21 - Cloudfree
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 22 - Cloudfree
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - Cloudfree
+  type: vless
+  server: 172.64.153.3
+  port: 443
+  uuid: 8779033b-a16a-4a7b-8767-d1980008d82a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 38973b0f.69lover.site
+  network: ws
+  ws-opts:
+    path: /api/v2/e9182405fa1a6489/stream
+    headers:
+      Host: 38973b0f.69lover.site
+- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
+  type: vless
+  server: 85.121.50.16
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /friends/go.php?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
+  type: vless
+  server: 167.179.111.237
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /act/player/search?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -612,29 +373,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 24 - Cloudfree
   - 🇯🇵 日本 (Japan) 25 - Cloudfree
   - 🇯🇵 日本 (Japan) 26 - Cloudfree
-  - 🇯🇵 日本 (Japan) 27 - Cloudfree
-  - 🇯🇵 日本 (Japan) 28 - Cloudfree
-  - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
-  - 🇯🇵 日本 (Japan) 33 - Cloudfree
-  - 🇯🇵 日本 (Japan) 34 - Cloudfree
-  - 🇯🇵 日本 (Japan) 35 - Cloudfree
-  - 🇯🇵 日本 (Japan) 36 - Cloudfree
-  - 🇯🇵 日本 (Japan) 37 - Cloudfree
-  - 🇯🇵 日本 (Japan) 38 - Cloudfree
-  - 🇯🇵 日本 (Japan) 39 - Cloudfree
-  - 🇯🇵 日本 (Japan) 40 - Cloudfree
-  - 🇯🇵 日本 (Japan) 41 - Cloudfree
-  - 🇯🇵 日本 (Japan) 42 - Cloudfree
-  - 🇯🇵 日本 (Japan) 43 - Cloudfree
-  - 🇯🇵 日本 (Japan) 44 - Cloudfree
-  - 🇯🇵 日本 (Japan) 45 - Cloudfree
-  - 🇯🇵 日本 (Japan) 46 - Cloudfree
-  - 🇯🇵 日本 (Japan) 47 - Cloudfree
-  - 🇯🇵 日本 (Japan) 48 - Cloudfree
-  - 🇯🇵 日本 (Japan) 49 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -666,28 +404,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 24 - Cloudfree
   - 🇯🇵 日本 (Japan) 25 - Cloudfree
   - 🇯🇵 日本 (Japan) 26 - Cloudfree
-  - 🇯🇵 日本 (Japan) 27 - Cloudfree
-  - 🇯🇵 日本 (Japan) 28 - Cloudfree
-  - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
-  - 🇯🇵 日本 (Japan) 33 - Cloudfree
-  - 🇯🇵 日本 (Japan) 34 - Cloudfree
-  - 🇯🇵 日本 (Japan) 35 - Cloudfree
-  - 🇯🇵 日本 (Japan) 36 - Cloudfree
-  - 🇯🇵 日本 (Japan) 37 - Cloudfree
-  - 🇯🇵 日本 (Japan) 38 - Cloudfree
-  - 🇯🇵 日本 (Japan) 39 - Cloudfree
-  - 🇯🇵 日本 (Japan) 40 - Cloudfree
-  - 🇯🇵 日本 (Japan) 41 - Cloudfree
-  - 🇯🇵 日本 (Japan) 42 - Cloudfree
-  - 🇯🇵 日本 (Japan) 43 - Cloudfree
-  - 🇯🇵 日本 (Japan) 44 - Cloudfree
-  - 🇯🇵 日本 (Japan) 45 - Cloudfree
-  - 🇯🇵 日本 (Japan) 46 - Cloudfree
-  - 🇯🇵 日本 (Japan) 47 - Cloudfree
-  - 🇯🇵 日本 (Japan) 48 - Cloudfree
-  - 🇯🇵 日本 (Japan) 49 - Cloudfree
 rules:
 - MATCH,PROXIES

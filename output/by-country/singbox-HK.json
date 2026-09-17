@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree"
+        "🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree",
+        "🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree",
+        "🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree"
+        "🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree",
+        "🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree",
+        "🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 SC 01 - Cloudfree",
+        "🇸🇨 SC 02 - Cloudfree",
+        "🇸🇨 SC 03 - Cloudfree",
+        "🇸🇨 SC 04 - Cloudfree",
+        "🇸🇨 SC 05 - Cloudfree"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 SC 01 - Cloudfree",
+        "🇸🇨 SC 02 - Cloudfree",
+        "🇸🇨 SC 03 - Cloudfree",
+        "🇸🇨 SC 04 - Cloudfree",
+        "🇸🇨 SC 05 - Cloudfree"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -18,18 +18,82 @@ proxies:
   client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: 43.159.4.80
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  type: vless
+  server: apicdn.4subnodes.com
+  port: 443
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apicdn.4subnodes.com
+  network: ws
+  ws-opts:
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    headers:
+      Host: apicdn.4subnodes.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +101,11 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +113,10 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
 rules:
 - MATCH,PROXIES
