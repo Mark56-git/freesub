@@ -6,20 +6,21 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Cloudfree
   type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vws/
     headers:
-      Host: akamaized.net
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 02 - Cloudfree
   type: vless
-  server: 81.95.4.189
+  server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -56,42 +57,6 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 05 - Cloudfree
-  type: vless
-  server: 52.47.212.72
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - Cloudfree
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 07 - Cloudfree
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,9 +66,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - Cloudfree
   - 🇫🇷 法国 (France) 03 - Cloudfree
   - 🇫🇷 法国 (France) 04 - Cloudfree
-  - 🇫🇷 法国 (France) 05 - Cloudfree
-  - 🇫🇷 法国 (France) 06 - Cloudfree
-  - 🇫🇷 法国 (France) 07 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,8 +75,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - Cloudfree
   - 🇫🇷 法国 (France) 03 - Cloudfree
   - 🇫🇷 法国 (France) 04 - Cloudfree
-  - 🇫🇷 法国 (France) 05 - Cloudfree
-  - 🇫🇷 法国 (France) 06 - Cloudfree
-  - 🇫🇷 法国 (France) 07 - Cloudfree
 rules:
 - MATCH,PROXIES

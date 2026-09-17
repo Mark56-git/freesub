@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Cloudfree
   type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  server: 51.170.179.166
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
   udp: true
 proxy-groups:
 - name: PROXIES
