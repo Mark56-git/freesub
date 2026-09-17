@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - Cloudfree
   type: vless
-  server: 172.105.169.70
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 172.105.169.70
-- name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
-  type: vless
   server: 103.75.119.126
   port: 2087
   uuid: 731f177e-00aa-480c-b935-661456139a32
@@ -26,7 +17,7 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
+- name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -46,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
 rules:
 - MATCH,PROXIES
