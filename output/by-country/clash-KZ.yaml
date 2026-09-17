@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Cloudfree
   type: vless
-  server: kz3.zuoai.cf
+  server: 31.43.179.87
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true

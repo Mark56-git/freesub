@@ -19,89 +19,17 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
-  type: vmess
-  server: 47.242.79.198
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ejOMsxPtP19APyGL.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ejOMsxPtP19APyGL.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
-  type: vmess
-  server: 47.83.19.148
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
-  type: vmess
-  server: 47.76.197.72
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: m01c7b2z26dtqgee.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: m01c7b2z26dtqgee.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
-  type: vmess
-  server: 47.243.80.106
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wwafj5LHl6bI8aU9.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wwafj5LHl6bI8aU9.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

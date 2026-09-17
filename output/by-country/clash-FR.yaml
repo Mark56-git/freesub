@@ -17,8 +17,20 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 149.202.58.99
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 02 - Cloudfree
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 03 - Cloudfree
   type: vless
   server: 149.202.58.99
   port: 443
@@ -31,18 +43,7 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 03 - Cloudfree
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 04 - Cloudfree
   type: vless
   server: 149.202.58.99
@@ -56,7 +57,19 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: bab-6.site
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 05 - Cloudfree
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +79,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - Cloudfree
   - 🇫🇷 法国 (France) 03 - Cloudfree
   - 🇫🇷 法国 (France) 04 - Cloudfree
+  - 🇫🇷 法国 (France) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +89,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - Cloudfree
   - 🇫🇷 法国 (France) 03 - Cloudfree
   - 🇫🇷 法国 (France) 04 - Cloudfree
+  - 🇫🇷 法国 (France) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

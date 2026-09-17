@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 CZ 01 - Cloudfree",
+        "🇨🇿 CZ 02 - Cloudfree",
+        "🇨🇿 CZ 03 - Cloudfree",
+        "🇨🇿 CZ 04 - Cloudfree",
+        "🇨🇿 CZ 05 - Cloudfree",
+        "🇨🇿 CZ 06 - Cloudfree",
+        "🇨🇿 CZ 07 - Cloudfree",
+        "🇨🇿 CZ 08 - Cloudfree",
+        "🇨🇿 CZ 09 - Cloudfree",
+        "🇨🇿 CZ 10 - Cloudfree"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 CZ 01 - Cloudfree",
+        "🇨🇿 CZ 02 - Cloudfree",
+        "🇨🇿 CZ 03 - Cloudfree",
+        "🇨🇿 CZ 04 - Cloudfree",
+        "🇨🇿 CZ 05 - Cloudfree",
+        "🇨🇿 CZ 06 - Cloudfree",
+        "🇨🇿 CZ 07 - Cloudfree",
+        "🇨🇿 CZ 08 - Cloudfree",
+        "🇨🇿 CZ 09 - Cloudfree",
+        "🇨🇿 CZ 10 - Cloudfree"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
