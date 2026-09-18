@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - Cloudfree
+- name: 🇸🇪 SE 01 - Cloudfree
   type: vless
-  server: 94.26.35.139
-  port: 25720
-  uuid: be83425f-74c5-4b03-9c4b-20aa16322698
+  server: 138.124.25.250
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
-  servername: www.samsung.com
-  client-fingerprint: firefox
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 rules:
 - MATCH,PROXIES

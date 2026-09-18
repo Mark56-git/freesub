@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - Cloudfree
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 212.87.190.124
+  port: 3
+  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - Cloudfree
   type: vless
   server: 94.183.170.135
@@ -25,23 +24,12 @@ proxies:
 - name: 🇪🇪 EE 03 - Cloudfree
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 04 - Cloudfree
-  type: ss
-  server: 212.87.190.124
-  port: 99
-  cipher: chacha20-ietf-poly1305
-  password: 6nQnSKAxCLJSZbg7KA94QA
-  udp: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +38,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - Cloudfree
   - 🇪🇪 EE 02 - Cloudfree
   - 🇪🇪 EE 03 - Cloudfree
-  - 🇪🇪 EE 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,6 +46,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - Cloudfree
   - 🇪🇪 EE 02 - Cloudfree
   - 🇪🇪 EE 03 - Cloudfree
-  - 🇪🇪 EE 04 - Cloudfree
 rules:
 - MATCH,PROXIES
