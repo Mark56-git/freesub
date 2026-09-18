@@ -19,32 +19,18 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  type: vless
-  server: 188.114.97.8
-  port: 8443
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  type: ss
+  server: 195.58.48.137
+  port: 10900
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  type: ss
-  server: 176.32.35.44
-  port: 50111
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -54,7 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
 rules:
 - MATCH,PROXIES

@@ -20,46 +20,18 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 02 - Cloudfree
   type: vless
-  server: 212.104.128.206
+  server: 151.101.56.6
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 03 - Cloudfree
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 04 - Cloudfree
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
+      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - Cloudfree
   - 🇫🇮 FI 02 - Cloudfree
-  - 🇫🇮 FI 03 - Cloudfree
-  - 🇫🇮 FI 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - Cloudfree
   - 🇫🇮 FI 02 - Cloudfree
-  - 🇫🇮 FI 03 - Cloudfree
-  - 🇫🇮 FI 04 - Cloudfree
 rules:
 - MATCH,PROXIES

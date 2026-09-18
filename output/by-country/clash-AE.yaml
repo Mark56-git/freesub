@@ -19,18 +19,56 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: 172.64.95.237
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  type: vless
+  server: apicdn.4subnodes.com
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-565221666bd1
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mczrh5e3u5ps.shoameny.workers.dev
+  servername: apicdn.4subnodes.com
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/565221666bd1/loc-5
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
     headers:
-      Host: mczrh5e3u5ps.shoameny.workers.dev
+      Host: apicdn.4subnodes.com
+- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 rules:
 - MATCH,PROXIES
