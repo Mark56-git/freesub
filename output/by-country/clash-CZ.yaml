@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Cloudfree
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.248
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - Cloudfree
   type: vless
-  server: 195.85.23.111
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -48,32 +48,32 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - Cloudfree
   type: vless
-  server: 195.85.23.248
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 172.67.186.192
+  port: 2083
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
 - name: 🇨🇿 CZ 05 - Cloudfree
   type: vless
-  server: 195.85.23.75
+  server: 172.67.147.209
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
   network: ws
   ws-opts:
-    path: /
+    path: /vl/cxl8Wn1ylnsk63nJ0
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
 - name: 🇨🇿 CZ 06 - Cloudfree
   type: vless
   server: 195.85.23.219
@@ -90,7 +90,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 07 - Cloudfree
   type: vless
-  server: 195.85.23.47
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -118,7 +118,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 09 - Cloudfree
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.111
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -132,7 +132,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 10 - Cloudfree
   type: vless
-  server: 195.85.23.45
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -146,18 +146,32 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 11 - Cloudfree
   type: vless
-  server: 162.159.153.4
+  server: 195.85.23.47
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 12 - Cloudfree
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,6 +188,7 @@ proxy-groups:
   - 🇨🇿 CZ 09 - Cloudfree
   - 🇨🇿 CZ 10 - Cloudfree
   - 🇨🇿 CZ 11 - Cloudfree
+  - 🇨🇿 CZ 12 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,5 +205,6 @@ proxy-groups:
   - 🇨🇿 CZ 09 - Cloudfree
   - 🇨🇿 CZ 10 - Cloudfree
   - 🇨🇿 CZ 11 - Cloudfree
+  - 🇨🇿 CZ 12 - Cloudfree
 rules:
 - MATCH,PROXIES

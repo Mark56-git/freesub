@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - Cloudfree
   type: vless
-  server: 91.209.253.119
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -29,12 +29,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - Cloudfree
   type: vless
-  server: 91.209.253.229
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -43,7 +43,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 04 - Cloudfree
@@ -62,7 +62,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 05 - Cloudfree
   type: vless
-  server: 91.209.253.243
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -76,7 +76,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 06 - Cloudfree
   type: vless
-  server: 91.209.253.25
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -104,7 +104,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 08 - Cloudfree
   type: vless
-  server: 91.209.253.229
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -118,7 +118,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 09 - Cloudfree
   type: vless
-  server: 91.209.253.244
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -132,7 +132,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 10 - Cloudfree
   type: vless
-  server: 91.209.253.216
+  server: 91.209.253.243
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -146,7 +146,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 11 - Cloudfree
   type: vless
-  server: 91.209.253.250
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -160,7 +160,35 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 12 - Cloudfree
   type: vless
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 13 - Cloudfree
+  type: vless
   server: 91.209.253.109
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 14 - Cloudfree
+  type: vless
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -189,6 +217,8 @@ proxy-groups:
   - 🇸🇦 SA 10 - Cloudfree
   - 🇸🇦 SA 11 - Cloudfree
   - 🇸🇦 SA 12 - Cloudfree
+  - 🇸🇦 SA 13 - Cloudfree
+  - 🇸🇦 SA 14 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -206,5 +236,7 @@ proxy-groups:
   - 🇸🇦 SA 10 - Cloudfree
   - 🇸🇦 SA 11 - Cloudfree
   - 🇸🇦 SA 12 - Cloudfree
+  - 🇸🇦 SA 13 - Cloudfree
+  - 🇸🇦 SA 14 - Cloudfree
 rules:
 - MATCH,PROXIES

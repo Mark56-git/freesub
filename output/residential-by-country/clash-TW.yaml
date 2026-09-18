@@ -14,12 +14,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 7dba81fc3a0b.oylfmxz.cn
+  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 7dba81fc3a0b.oylfmxz.cn
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
   type: vless
   server: 59.125.69.19

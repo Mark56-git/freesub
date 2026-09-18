@@ -6,54 +6,26 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Cloudfree
   type: vless
-  server: 104.18.31.37
+  server: 104.21.32.142
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5bc7860646e4
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: qzz0a4eou1ms.mlm-792d0942.workers.dev
+  servername: 5DKTCUajb2a1jxIX7csNrmEUCg.MAhRADeMAmi.wORkeRs.dEV
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/5bc7860646e4
+    path: /vl/Fi3kP8cNjBoo8UPv
     headers:
-      Host: qzz0a4eou1ms.mlm-792d0942.workers.dev
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
 - name: 🇫🇷 法国 (France) 02 - Cloudfree
-  type: vless
-  server: 141.11.202.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇫🇷 法国 (France) 03 - Cloudfree
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 04 - Cloudfree
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 05 - Cloudfree
+- name: 🇫🇷 法国 (France) 03 - Cloudfree
   type: vless
   server: 81.95.4.189
   port: 443
@@ -67,32 +39,35 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 06 - Cloudfree
+- name: 🇫🇷 法国 (France) 04 - Cloudfree
   type: vless
-  server: 63.141.128.22
+  server: 162.159.153.4
   port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-- name: 🇫🇷 法国 (France) 07 - Cloudfree
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇫🇷 法国 (France) 05 - Cloudfree
+  type: vless
+  server: 104.18.31.37
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5bc7860646e4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 08 - Cloudfree
+  servername: qzz0a4eou1ms.mlm-792d0942.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5bc7860646e4
+    headers:
+      Host: qzz0a4eou1ms.mlm-792d0942.workers.dev
+- name: 🇫🇷 法国 (France) 06 - Cloudfree
   type: vless
   server: 149.202.58.99
   port: 443
@@ -106,6 +81,84 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 07 - Cloudfree
+  type: vless
+  server: 13.37.81.71
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - Cloudfree
+  type: vless
+  server: 199.232.78.170
+  port: 443
+  uuid: XpnTeam-1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 09 - Cloudfree
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 10 - Cloudfree
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 11 - Cloudfree
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 12 - Cloudfree
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +172,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 06 - Cloudfree
   - 🇫🇷 法国 (France) 07 - Cloudfree
   - 🇫🇷 法国 (France) 08 - Cloudfree
+  - 🇫🇷 法国 (France) 09 - Cloudfree
+  - 🇫🇷 法国 (France) 10 - Cloudfree
+  - 🇫🇷 法国 (France) 11 - Cloudfree
+  - 🇫🇷 法国 (France) 12 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,5 +189,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 06 - Cloudfree
   - 🇫🇷 法国 (France) 07 - Cloudfree
   - 🇫🇷 法国 (France) 08 - Cloudfree
+  - 🇫🇷 法国 (France) 09 - Cloudfree
+  - 🇫🇷 法国 (France) 10 - Cloudfree
+  - 🇫🇷 法国 (France) 11 - Cloudfree
+  - 🇫🇷 法国 (France) 12 - Cloudfree
 rules:
 - MATCH,PROXIES
