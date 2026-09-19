@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇸 RS 01 - Cloudfree
+- name: 🇶🇦 QA 01 - Cloudfree
   type: vless
-  server: 172.67.67.178
+  server: 34.18.31.5
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
+  reality-opts:
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇸 RS 01 - Cloudfree
+  - 🇶🇦 QA 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇸 RS 01 - Cloudfree
+  - 🇶🇦 QA 01 - Cloudfree
 rules:
 - MATCH,PROXIES

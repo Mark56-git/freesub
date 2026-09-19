@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - Cloudfree
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 02 - Cloudfree
   type: vless
   server: 104.18.28.234
   port: 443
@@ -18,7 +25,7 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 CH 02 - Cloudfree
+- name: 🇨🇭 CH 03 - Cloudfree
   type: vless
   server: 104.18.28.234
   port: 443
@@ -39,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - Cloudfree
   - 🇨🇭 CH 02 - Cloudfree
+  - 🇨🇭 CH 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - Cloudfree
   - 🇨🇭 CH 02 - Cloudfree
+  - 🇨🇭 CH 03 - Cloudfree
 rules:
 - MATCH,PROXIES

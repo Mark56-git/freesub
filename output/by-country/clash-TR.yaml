@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   type: vless
-  server: 172.67.151.109
+  server: 172.67.134.170
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
   udp: true
@@ -32,20 +32,6 @@ proxies:
     path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
     headers:
       Host: jdzit4e4urks.xwzohsebujps.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  type: vless
-  server: 172.67.134.170
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
-    headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 rules:
 - MATCH,PROXIES
