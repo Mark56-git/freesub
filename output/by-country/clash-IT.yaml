@@ -26,13 +26,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 04 - Cloudfree
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +34,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - Cloudfree
   - 🇮🇹 意大利 (Italy) 02 - Cloudfree
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
-  - 🇮🇹 意大利 (Italy) 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +42,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - Cloudfree
   - 🇮🇹 意大利 (Italy) 02 - Cloudfree
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
-  - 🇮🇹 意大利 (Italy) 04 - Cloudfree
 rules:
 - MATCH,PROXIES

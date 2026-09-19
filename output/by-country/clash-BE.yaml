@@ -15,18 +15,6 @@ proxies:
   reality-opts:
     public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇪 BE 02 - Cloudfree
-  type: vless
-  server: 35.195.122.169
-  port: 443
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-  servername: www.cloudflare.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -34,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇪 BE 01 - Cloudfree
-  - 🇧🇪 BE 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇪 BE 01 - Cloudfree
-  - 🇧🇪 BE 02 - Cloudfree
 rules:
 - MATCH,PROXIES

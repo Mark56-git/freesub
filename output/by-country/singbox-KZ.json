@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - Cloudfree"
+        "🇰🇿 KZ 01 - Cloudfree",
+        "🇰🇿 KZ 02 - Cloudfree",
+        "🇰🇿 KZ 03 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - Cloudfree"
+        "🇰🇿 KZ 01 - Cloudfree",
+        "🇰🇿 KZ 02 - Cloudfree",
+        "🇰🇿 KZ 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
