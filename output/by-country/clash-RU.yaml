@@ -6,21 +6,8 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   type: vless
-  server: 104.18.34.14
+  server: 172.64.229.2
   port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  type: vless
-  server: 162.159.45.19
-  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,27 +17,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  type: ss
-  server: 195.58.48.137
-  port: 10900
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   type: vless
   server: 46.8.200.91
   port: 443
@@ -64,19 +31,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
-  type: vless
-  server: 172.64.52.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
+  type: ss
+  server: 195.133.5.102
+  port: 10900
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,9 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,8 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
 rules:
 - MATCH,PROXIES

@@ -19,34 +19,33 @@ proxies:
     headers:
       Host: 148.113.196.75
 - name: 🇨🇦 加拿大 (Canada) 02 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 03 - Cloudfree
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 04 - Cloudfree
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 05 - Cloudfree
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -58,77 +57,7 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 05 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07 - Cloudfree
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 08 - Cloudfree
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 09 - Cloudfree
-  type: vless
-  server: 104.21.89.41
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 10 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 11 - Cloudfree
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 12 - Cloudfree
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -140,34 +69,29 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 13 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇨🇦 加拿大 (Canada) 07 - Cloudfree
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 14 - Cloudfree
+- name: 🇨🇦 加拿大 (Canada) 08 - Cloudfree
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 15 - Cloudfree
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 09 - Cloudfree
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -177,41 +101,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - Cloudfree
+- name: 🇨🇦 加拿大 (Canada) 10 - Cloudfree
   type: vless
-  server: 104.21.236.63
+  server: 34.95.28.161
   port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 18 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  reality-opts:
+    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 11 - Cloudfree
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19 - Cloudfree
+- name: 🇨🇦 加拿大 (Canada) 12 - Cloudfree
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - Cloudfree
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 14 - Cloudfree
   type: vless
   server: 184.107.106.68
   port: 443
@@ -220,52 +143,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 20 - Cloudfree
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 21 - Cloudfree
-  type: vless
-  server: 104.21.89.41
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 22 - Cloudfree
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 23 - Cloudfree
+- name: 🇨🇦 加拿大 (Canada) 15 - Cloudfree
   type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 24 - Cloudfree
+- name: 🇨🇦 加拿大 (Canada) 16 - Cloudfree
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -277,67 +162,6 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 25 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 26 - Cloudfree
-  type: vless
-  server: 104.21.60.109
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 27 - Cloudfree
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 28 - Cloudfree
-  type: vless
-  server: 104.21.60.109
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 29 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -359,19 +183,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 14 - Cloudfree
   - 🇨🇦 加拿大 (Canada) 15 - Cloudfree
   - 🇨🇦 加拿大 (Canada) 16 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 17 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 18 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 19 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 20 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 21 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 22 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 23 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 24 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 25 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 26 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 27 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 28 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 29 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -393,18 +204,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 14 - Cloudfree
   - 🇨🇦 加拿大 (Canada) 15 - Cloudfree
   - 🇨🇦 加拿大 (Canada) 16 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 17 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 18 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 19 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 20 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 21 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 22 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 23 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 24 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 25 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 26 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 27 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 28 - Cloudfree
-  - 🇨🇦 加拿大 (Canada) 29 - Cloudfree
 rules:
 - MATCH,PROXIES

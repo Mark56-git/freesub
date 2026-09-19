@@ -5,20 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - Cloudfree
-  type: vless
-  server: 60.248.219.52
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: ''
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /
     headers:
-      Host: 60.248.219.52
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Cloudfree
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - Cloudfree
   type: vless
   server: 60.248.219.78
   port: 443
@@ -32,7 +50,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - Cloudfree
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - Cloudfree
   type: vless
   server: 59.125.69.19
   port: 443
@@ -46,26 +64,22 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.19
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - Cloudfree
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - Cloudfree
   type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - Cloudfree
   type: vmess
   server: 165.154.195.38
@@ -96,16 +110,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - Cloudfree
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,7 +123,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 06 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 07 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 08 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 09 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -133,6 +136,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 06 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 07 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 08 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 09 - Cloudfree
 rules:
 - MATCH,PROXIES
