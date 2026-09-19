@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Cloudfree
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,21 +20,21 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - Cloudfree
   type: vless
-  server: 31.59.121.156
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 195.85.23.111
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: cdn8848.776676.xyz
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - Cloudfree
   type: vless
-  server: 195.85.23.217
+  server: 195.85.23.248
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,34 +46,6 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - Cloudfree
-  type: vless
-  server: 195.85.23.45
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - Cloudfree
-  type: vless
-  server: 2.27.244.164
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +54,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - Cloudfree
   - 🇨🇿 CZ 02 - Cloudfree
   - 🇨🇿 CZ 03 - Cloudfree
-  - 🇨🇿 CZ 04 - Cloudfree
-  - 🇨🇿 CZ 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +62,5 @@ proxy-groups:
   - 🇨🇿 CZ 01 - Cloudfree
   - 🇨🇿 CZ 02 - Cloudfree
   - 🇨🇿 CZ 03 - Cloudfree
-  - 🇨🇿 CZ 04 - Cloudfree
-  - 🇨🇿 CZ 05 - Cloudfree
 rules:
 - MATCH,PROXIES
