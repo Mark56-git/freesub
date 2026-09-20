@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - Cloudfree
+- name: 🇮🇷 IR 01 - Cloudfree
   type: vless
-  server: 104.17.169.13
+  server: 188.130.207.30
   port: 2053
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /axch1mttbxz2k55y01
+    path: /
     headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - Cloudfree
+  - 🇮🇷 IR 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - Cloudfree
+  - 🇮🇷 IR 01 - Cloudfree
 rules:
 - MATCH,PROXIES

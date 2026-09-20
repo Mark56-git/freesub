@@ -6,22 +6,8 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   type: vless
-  server: 172.67.170.140
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  type: vless
-  server: 103.251.167.112
-  port: 8443
+  server: 161.104.44.138
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -29,9 +15,23 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /library/lang?ed=2560fp=chrome
+    path: /my/m/note?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
   type: vless
   server: 46.8.200.91
@@ -47,19 +47,12 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select

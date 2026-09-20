@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - Cloudfree
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
-  type: vless
-  server: 208.103.161.5
-  port: 443
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-- name: 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
-  type: vless
   server: 34.87.244.111
   port: 443
   uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
@@ -42,8 +15,8 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - Cloudfree
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
   type: vless
   server: 34.87.244.111
   port: 443
@@ -55,7 +28,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇦🇺 澳大利亚 (Australia) 05 - Cloudfree
+- name: 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
   type: vless
   server: 34.87.244.111
   port: 443
@@ -65,6 +38,30 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 (Australia) 04 - Cloudfree
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 - Cloudfree
+  type: vless
+  server: 34.87.229.148
+  port: 443
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 06 - Cloudfree
@@ -78,7 +75,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 07 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -90,34 +87,8 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
-  type: vless
-  server: 192.65.217.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
-  type: vless
-  server: 34.87.229.148
-  port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
   type: vless
   server: 34.87.244.111
   port: 443
@@ -128,8 +99,8 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -142,6 +113,18 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
+- name: 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
+  type: vless
+  server: 34.87.229.148
+  port: 443
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,7 +140,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,6 +155,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
 rules:
 - MATCH,PROXIES

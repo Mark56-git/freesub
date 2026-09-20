@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇺🇿 UZ 01 - Cloudfree
   type: vless
-  server: 104.24.143.217
+  server: 172.67.210.146
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
@@ -20,6 +20,19 @@ proxies:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 02 - Cloudfree
   type: vless
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /755276b33b6f
+    headers:
+      Host: 189.74.97.47
+- name: 🇺🇿 UZ 03 - Cloudfree
+  type: vless
   server: 104.18.80.149
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
@@ -32,34 +45,7 @@ proxies:
     path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
     headers:
       Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
-- name: 🇺🇿 UZ 03 - Cloudfree
-  type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /755276b33b6f
-    headers:
-      Host: 189.74.97.47
 - name: 🇺🇿 UZ 04 - Cloudfree
-  type: vless
-  server: 172.67.210.146
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🇺🇿 UZ 05 - Cloudfree
   type: vless
   server: 189.74.97.43
   port: 2087
@@ -72,6 +58,20 @@ proxies:
     path: /73b6faea2d00
     headers:
       Host: 189.74.97.43
+- name: 🇺🇿 UZ 05 - Cloudfree
+  type: vless
+  server: 104.24.143.217
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
