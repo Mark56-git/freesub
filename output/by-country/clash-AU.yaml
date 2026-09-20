@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇦🇺 澳大利亚 (Australia) 02 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -27,20 +27,19 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - Cloudfree
   type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -52,7 +51,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -76,7 +75,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 07 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -88,7 +87,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
   type: vless
   server: 34.87.244.111
@@ -100,68 +99,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇦🇺 澳大利亚 (Australia) 12 - Cloudfree
-  type: vless
-  server: 34.87.229.148
-  port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 13 - Cloudfree
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-    headers:
-      Host: 103.75.119.126
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -175,11 +113,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 07 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 12 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 13 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -193,10 +126,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 06 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 07 - Cloudfree
   - 🇦🇺 澳大利亚 (Australia) 08 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 09 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 10 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 11 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 12 - Cloudfree
-  - 🇦🇺 澳大利亚 (Australia) 13 - Cloudfree
 rules:
 - MATCH,PROXIES
