@@ -32,35 +32,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   type: vless
-  server: 157.228.142.148
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: '%2Fact%2Frank%2Flang%3Fed%3D2560'
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
   type: vless
-  server: 188.72.103.4
+  server: 89.125.147.199
   port: 443
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: apicdn.4subnodes.com
-  network: ws
-  ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
-    headers:
-      Host: apicdn.4subnodes.com
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -86,43 +83,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -148,8 +120,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -163,7 +133,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
 rules:
 - MATCH,PROXIES
