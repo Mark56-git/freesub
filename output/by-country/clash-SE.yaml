@@ -17,17 +17,26 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.195.98
+- name: 🇸🇪 SE 02 - Cloudfree
+  type: ss
+  server: 51.170.185.165
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 rules:
 - MATCH,PROXIES
