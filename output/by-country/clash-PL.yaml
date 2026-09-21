@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - Cloudfree
+- name: 🇵🇱 PL 01 - Cloudfree
   type: vless
-  server: 34.176.98.128
+  server: 34.118.70.195
   port: 443
-  uuid: 4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5
+  uuid: d518b4e2-bd6e-4d4e-a26e-238154d8d60c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
+    public-key: t_ql5pn5MG1bkVQoteCXoKkSTzUzOs_yXMllmsyiqXY
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - Cloudfree
+  - 🇵🇱 PL 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - Cloudfree
+  - 🇵🇱 PL 01 - Cloudfree
 rules:
 - MATCH,PROXIES

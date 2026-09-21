@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - Cloudfree
+- name: 🇱🇻 LV 01 - Cloudfree
   type: vless
-  server: 193.181.216.117
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 104.25.217.189
+  port: 443
+  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: imzajnekupas.a3-60-morteza.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
     headers:
-      Host: cdn8848.776676.xyz
+      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - Cloudfree
+  - 🇱🇻 LV 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - Cloudfree
+  - 🇱🇻 LV 01 - Cloudfree
 rules:
 - MATCH,PROXIES
