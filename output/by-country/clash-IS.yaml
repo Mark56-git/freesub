@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - Cloudfree
+- name: 🇮🇸 IS 01 - Cloudfree
   type: vless
-  server: 66.81.247.155
-  port: 2083
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  server: 151.243.181.99
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /OAZko425kNFF0PpQ
+    path: /
     headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - Cloudfree
+  - 🇮🇸 IS 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - Cloudfree
+  - 🇮🇸 IS 01 - Cloudfree
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - Cloudfree"
+        "🇲🇩 MD 01 - Cloudfree",
+        "🇲🇩 MD 02 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - Cloudfree"
+        "🇲🇩 MD 01 - Cloudfree",
+        "🇲🇩 MD 02 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
