@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - Cloudfree
   type: vless
-  server: 141.227.186.38
+  server: 141.227.137.177
   port: 2053
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -20,21 +20,7 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇧🇪 BE 02 - Cloudfree
   type: vless
-  server: 141.227.137.177
-  port: 2053
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇧🇪 BE 03 - Cloudfree
-  type: vless
-  server: 141.227.137.177
+  server: 141.227.186.38
   port: 2053
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 BE 01 - Cloudfree
   - 🇧🇪 BE 02 - Cloudfree
-  - 🇧🇪 BE 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 BE 01 - Cloudfree
   - 🇧🇪 BE 02 - Cloudfree
-  - 🇧🇪 BE 03 - Cloudfree
 rules:
 - MATCH,PROXIES

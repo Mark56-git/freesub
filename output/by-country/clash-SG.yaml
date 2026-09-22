@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - Cloudfree
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -15,13 +15,27 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 02 - Cloudfree
-  type: ss
-  server: 194.233.74.160
-  port: 2342
-  cipher: chacha20-ietf-poly1305
-  password: XV4bvaJIWoxl3IYEC1e6W7
+  type: vless
+  server: 43.161.254.71
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇸🇬 新加坡 (Singapore) 03 - Cloudfree
+  type: ss
+  server: 134.185.89.83
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 04 - Cloudfree
   type: vless
   server: 172.67.130.159
   port: 2096
@@ -35,9 +49,50 @@ proxies:
     path: /78bc8
     headers:
       Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 04 - Cloudfree
+- name: 🇸🇬 新加坡 (Singapore) 05 - Cloudfree
   type: vless
-  server: 103.101.0.73
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - Cloudfree
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - Cloudfree
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 08 - Cloudfree
+  type: vless
+  server: 103.195.188.206
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 09 - Cloudfree
+  type: vless
+  server: 43.161.254.71
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -49,164 +104,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 05 - Cloudfree
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - Cloudfree
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - Cloudfree
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - Cloudfree
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - Cloudfree
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 10 - Cloudfree
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-sg.skyvora.app
-  network: ws
-  ws-opts:
-    path: /78bc8
-    headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 11 - Cloudfree
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-sg.skyvora.app
-  network: ws
-  ws-opts:
-    path: /78bc8
-    headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 12 - Cloudfree
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 13 - Cloudfree
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 14 - Cloudfree
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - Cloudfree
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - Cloudfree
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 - Cloudfree
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 18 - Cloudfree
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - Cloudfree
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -219,7 +117,50 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 20 - Cloudfree
+- name: 🇸🇬 新加坡 (Singapore) 11 - Cloudfree
+  type: vless
+  server: 103.143.81.178
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 12 - Cloudfree
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 - Cloudfree
+  type: ss
+  server: 129.150.45.119
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 14 - Cloudfree
+  type: vmess
+  server: 172.237.70.226
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - Cloudfree
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -229,27 +170,49 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - Cloudfree
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 16 - Cloudfree
+  type: vless
+  server: 140.235.39.19
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - Cloudfree
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 17 - Cloudfree
+  type: vless
+  server: 122.10.119.252
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - Cloudfree
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 18 - Cloudfree
+  type: vless
+  server: 103.195.188.192
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 19 - Cloudfree
   type: vless
   server: 103.195.188.206
   port: 443
@@ -263,33 +226,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 24 - Cloudfree
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 25 - Cloudfree
-  type: vless
-  server: 216.173.67.119
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 26 - Cloudfree
+- name: 🇸🇬 新加坡 (Singapore) 20 - Cloudfree
   type: vless
   server: 103.101.0.73
   port: 443
@@ -303,7 +240,173 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 21 - Cloudfree
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-sg.skyvora.app
+  network: ws
+  ws-opts:
+    path: /78bc8
+    headers:
+      Host: cdn-sg.skyvora.app
+- name: 🇸🇬 新加坡 (Singapore) 22 - Cloudfree
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - Cloudfree
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - Cloudfree
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - Cloudfree
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 26 - Cloudfree
+  type: ss
+  server: 194.233.74.160
+  port: 2342
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
+  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 27 - Cloudfree
+  type: vless
+  server: 103.195.188.192
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 28 - Cloudfree
+  type: ss
+  server: 167.150.100.93
+  port: 29824
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - Cloudfree
+  type: vless
+  server: 140.235.39.19
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 30 - Cloudfree
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 31 - Cloudfree
+  type: vless
+  server: 103.170.217.60
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 32 - Cloudfree
+  type: vmess
+  server: 45.32.120.173
+  port: 443
+  uuid: XEXEVIL
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 33 - Cloudfree
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 34 - Cloudfree
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 35 - Cloudfree
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 36 - Cloudfree
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -315,33 +418,20 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 28 - Cloudfree
-  type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 (Singapore) 37 - Cloudfree
+  type: vless
+  server: 104.21.8.201
+  port: 2096
+  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - Cloudfree
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 30 - Cloudfree
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: cdn-sg.skyvora.app
+  network: ws
+  ws-opts:
+    path: /78bc8
+    headers:
+      Host: cdn-sg.skyvora.app
 proxy-groups:
 - name: PROXIES
   type: select
@@ -377,6 +467,13 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 28 - Cloudfree
   - 🇸🇬 新加坡 (Singapore) 29 - Cloudfree
   - 🇸🇬 新加坡 (Singapore) 30 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 31 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 32 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 33 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 34 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 35 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 36 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 37 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -412,5 +509,12 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 28 - Cloudfree
   - 🇸🇬 新加坡 (Singapore) 29 - Cloudfree
   - 🇸🇬 新加坡 (Singapore) 30 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 31 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 32 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 33 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 34 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 35 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 36 - Cloudfree
+  - 🇸🇬 新加坡 (Singapore) 37 - Cloudfree
 rules:
 - MATCH,PROXIES

@@ -4,26 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - Cloudfree
+- name: 🇮🇶 IQ 01 - Cloudfree
   type: vless
-  server: 140.245.102.107
-  port: 119
-  uuid: a5da154b-4632-4fc4-8fcb-9495fe195b1b
+  server: 185.255.179.11
+  port: 9443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wom.co
+  servername: hub-de-03.hanvpn.cc
+  network: ws
+  ws-opts:
+    path: /de03-ws-8e47a
+    headers:
+      Host: hub-de-03.hanvpn.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - Cloudfree
+  - 🇮🇶 IQ 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - Cloudfree
+  - 🇮🇶 IQ 01 - Cloudfree
 rules:
 - MATCH,PROXIES
