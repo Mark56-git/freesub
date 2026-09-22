@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - Cloudfree
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - Cloudfree
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -31,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - Cloudfree
-  - 🇪🇸 西班牙 (Spain) 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - Cloudfree
-  - 🇪🇸 西班牙 (Spain) 02 - Cloudfree
 rules:
 - MATCH,PROXIES

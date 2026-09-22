@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - Cloudfree"
+        "🇮🇶 IQ 01 - Cloudfree",
+        "🇮🇶 IQ 02 - Cloudfree",
+        "🇮🇶 IQ 03 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - Cloudfree"
+        "🇮🇶 IQ 01 - Cloudfree",
+        "🇮🇶 IQ 02 - Cloudfree",
+        "🇮🇶 IQ 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
