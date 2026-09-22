@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - Cloudfree
   type: vless
-  server: 195.26.229.148
+  server: 195.26.229.120
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 02 - Cloudfree
   type: vless
-  server: 195.26.229.235
+  server: 195.26.229.32
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -29,7 +29,7 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 03 - Cloudfree
@@ -43,10 +43,10 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 CY 04 - Cloudfree
   type: vless
-  server: 195.26.229.86
+  server: 195.26.229.32
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -55,12 +55,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 05 - Cloudfree
   type: vless
-  server: 195.26.229.120
+  server: 195.26.229.157
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -74,7 +74,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 06 - Cloudfree
   type: vless
-  server: 195.26.229.127
+  server: 195.26.229.131
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 07 - Cloudfree
+  type: vless
+  server: 195.26.229.222
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -86,21 +100,9 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 07 - Cloudfree
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: qq
 - name: 🇨🇾 CY 08 - Cloudfree
   type: vless
-  server: 195.26.229.235
+  server: 195.26.229.86
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -126,7 +128,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇾 CY 10 - Cloudfree
   type: vless
-  server: 195.26.229.32
+  server: 195.26.229.235
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -140,21 +142,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 11 - Cloudfree
   type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇨🇾 CY 12 - Cloudfree
-  type: vless
-  server: 195.26.229.86
+  server: 195.26.229.148
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -163,7 +151,21 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip
+    path: /proxyip=us.xiabibi.cffp=chrome
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 12 - Cloudfree
+  type: vless
+  server: 195.26.229.131
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 13 - Cloudfree
@@ -182,19 +184,45 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 14 - Cloudfree
   type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 15 - Cloudfree
+  type: vless
+  server: 195.26.229.235
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: shuma.ccwu.cc
-- name: 🇨🇾 CY 15 - Cloudfree
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 16 - Cloudfree
+  type: vless
+  server: 195.26.229.86
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 17 - Cloudfree
   type: vless
   server: 195.26.229.156
   port: 443
@@ -208,35 +236,9 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 16 - Cloudfree
-  type: vless
-  server: 195.26.229.222
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 17 - Cloudfree
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: random
 - name: 🇨🇾 CY 18 - Cloudfree
   type: vless
-  server: 195.26.229.131
+  server: 195.26.229.127
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -246,34 +248,6 @@ proxies:
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 19 - Cloudfree
-  type: vless
-  server: 195.26.229.157
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 20 - Cloudfree
-  type: vless
-  server: 195.26.229.32
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 proxy-groups:
@@ -299,8 +273,6 @@ proxy-groups:
   - 🇨🇾 CY 16 - Cloudfree
   - 🇨🇾 CY 17 - Cloudfree
   - 🇨🇾 CY 18 - Cloudfree
-  - 🇨🇾 CY 19 - Cloudfree
-  - 🇨🇾 CY 20 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -324,7 +296,5 @@ proxy-groups:
   - 🇨🇾 CY 16 - Cloudfree
   - 🇨🇾 CY 17 - Cloudfree
   - 🇨🇾 CY 18 - Cloudfree
-  - 🇨🇾 CY 19 - Cloudfree
-  - 🇨🇾 CY 20 - Cloudfree
 rules:
 - MATCH,PROXIES

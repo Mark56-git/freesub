@@ -14,12 +14,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
+      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
   type: vless
   server: 60.248.219.78
@@ -34,20 +34,22 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
-  type: vless
-  server: 104.18.42.54
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ''
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: ''
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - Cloudfree
   type: vless
   server: 172.64.146.211
@@ -64,20 +66,6 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 05 (家宽) - Cloudfree
   type: vless
-  server: 172.64.53.60
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - Cloudfree
-  type: vless
   server: 172.64.53.87
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -90,6 +78,20 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Cloudfree
+  type: vless
+  server: 103.148.73.136
+  port: 8443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,10 +99,10 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - Cloudfree
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,9 +110,9 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - Cloudfree
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES

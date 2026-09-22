@@ -6,61 +6,29 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - Cloudfree
   type: vless
-  server: 172.64.149.54
-  port: 443
-  uuid: fe34b5df-e634-4c83-a057-e53f41ce8e27
+  server: 66.81.247.155
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lATE-LaB-d6A2.CIwodA8715.WoRKerS.DeV
+  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiQ3dmV1d4OUFQdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    path: /OAZko425kNFF0PpQ
     headers:
-      Host: late-lab-d6a2.ciwoda8715.workers.dev
-- name: 🇮🇶 IQ 02 - Cloudfree
-  type: vless
-  server: 172.67.170.140
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇮🇶 IQ 03 - Cloudfree
-  type: vless
-  server: 188.114.98.134
-  port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - Cloudfree
-  - 🇮🇶 IQ 02 - Cloudfree
-  - 🇮🇶 IQ 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - Cloudfree
-  - 🇮🇶 IQ 02 - Cloudfree
-  - 🇮🇶 IQ 03 - Cloudfree
 rules:
 - MATCH,PROXIES

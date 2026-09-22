@@ -18,17 +18,67 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 02 - Cloudfree
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 03 - Cloudfree
+  type: vless
+  server: 195.133.92.20
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 04 - Cloudfree
+  type: vless
+  server: 152.114.195.163
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 02 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 03 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 02 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 03 - Cloudfree
+  - 🇪🇸 西班牙 (Spain) 04 - Cloudfree
 rules:
 - MATCH,PROXIES

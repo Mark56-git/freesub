@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - Cloudfree",
-        "🇮🇶 IQ 02 - Cloudfree",
-        "🇮🇶 IQ 03 - Cloudfree"
+        "🇮🇶 IQ 01 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - Cloudfree",
-        "🇮🇶 IQ 02 - Cloudfree",
-        "🇮🇶 IQ 03 - Cloudfree"
+        "🇮🇶 IQ 01 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

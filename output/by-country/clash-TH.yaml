@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 02 - Cloudfree
   type: vless
   server: 34.15.162.1
@@ -27,32 +27,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 03 - Cloudfree
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇹🇭 TH 04 - Cloudfree
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇹🇭 TH 05 - Cloudfree
+- name: 🇹🇭 TH 03 - Cloudfree
   type: vless
   server: 43.133.110.81
   port: 443
@@ -66,7 +42,7 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 06 - Cloudfree
+- name: 🇹🇭 TH 04 - Cloudfree
   type: vless
   server: 34.15.162.1
   port: 443
@@ -78,7 +54,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇹🇭 TH 07 - Cloudfree
+- name: 🇹🇭 TH 05 - Cloudfree
   type: vless
   server: 34.15.162.1
   port: 443
@@ -90,7 +66,19 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 08 - Cloudfree
+- name: 🇹🇭 TH 06 - Cloudfree
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 TH 07 - Cloudfree
   type: vless
   server: 103.86.49.57
   port: 80
@@ -103,19 +91,7 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 09 - Cloudfree
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇭 TH 10 - Cloudfree
+- name: 🇹🇭 TH 08 - Cloudfree
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -143,8 +119,6 @@ proxy-groups:
   - 🇹🇭 TH 06 - Cloudfree
   - 🇹🇭 TH 07 - Cloudfree
   - 🇹🇭 TH 08 - Cloudfree
-  - 🇹🇭 TH 09 - Cloudfree
-  - 🇹🇭 TH 10 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,7 +132,5 @@ proxy-groups:
   - 🇹🇭 TH 06 - Cloudfree
   - 🇹🇭 TH 07 - Cloudfree
   - 🇹🇭 TH 08 - Cloudfree
-  - 🇹🇭 TH 09 - Cloudfree
-  - 🇹🇭 TH 10 - Cloudfree
 rules:
 - MATCH,PROXIES

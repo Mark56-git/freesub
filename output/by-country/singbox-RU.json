@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - Cloudfree"
+        "🇷🇺 俄罗斯 (Russia) 01 - Cloudfree",
+        "🇷🇺 俄罗斯 (Russia) 02 - Cloudfree",
+        "🇷🇺 俄罗斯 (Russia) 03 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - Cloudfree"
+        "🇷🇺 俄罗斯 (Russia) 01 - Cloudfree",
+        "🇷🇺 俄罗斯 (Russia) 02 - Cloudfree",
+        "🇷🇺 俄罗斯 (Russia) 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
