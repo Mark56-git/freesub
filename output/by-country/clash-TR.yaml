@@ -4,30 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - Cloudfree
+- name: 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 185.71.219.128
+  port: 2052
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: 185.71.219.128
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
 rules:
 - MATCH,PROXIES
