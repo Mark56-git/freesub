@@ -35,6 +35,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - Cloudfree
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 06 - Cloudfree
   type: vless
   server: 57.131.21.102
   port: 8443
@@ -58,6 +65,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
   - 🇮🇹 意大利 (Italy) 04 - Cloudfree
   - 🇮🇹 意大利 (Italy) 05 - Cloudfree
+  - 🇮🇹 意大利 (Italy) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +76,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - Cloudfree
   - 🇮🇹 意大利 (Italy) 04 - Cloudfree
   - 🇮🇹 意大利 (Italy) 05 - Cloudfree
+  - 🇮🇹 意大利 (Italy) 06 - Cloudfree
 rules:
 - MATCH,PROXIES
