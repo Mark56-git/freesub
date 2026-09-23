@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE 01 - Cloudfree",
-        "🇪🇪 EE 02 - Cloudfree"
+        "🇪🇪 EE 02 - Cloudfree",
+        "🇪🇪 EE 03 - Cloudfree"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 EE 01 - Cloudfree",
-        "🇪🇪 EE 02 - Cloudfree"
+        "🇪🇪 EE 02 - Cloudfree",
+        "🇪🇪 EE 03 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

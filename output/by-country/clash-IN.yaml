@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - Cloudfree
   type: vless
   server: 34.47.245.203
@@ -39,8 +39,20 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 04 - Cloudfree
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - Cloudfree
   type: vless
   server: 34.47.245.203
   port: 443
@@ -52,6 +64,18 @@ proxies:
     public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇮🇳 印度 (India) 06 - Cloudfree
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +85,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Cloudfree
   - 🇮🇳 印度 (India) 03 - Cloudfree
   - 🇮🇳 印度 (India) 04 - Cloudfree
+  - 🇮🇳 印度 (India) 05 - Cloudfree
+  - 🇮🇳 印度 (India) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +96,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Cloudfree
   - 🇮🇳 印度 (India) 03 - Cloudfree
   - 🇮🇳 印度 (India) 04 - Cloudfree
+  - 🇮🇳 印度 (India) 05 - Cloudfree
+  - 🇮🇳 印度 (India) 06 - Cloudfree
 rules:
 - MATCH,PROXIES
