@@ -14,12 +14,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
