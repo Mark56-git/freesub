@@ -4,24 +4,44 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - Cloudfree
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - Cloudfree
   type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - Cloudfree
   type: vless
-  server: 60.248.219.78
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  type: vless
+  server: 59.125.69.24
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -30,20 +50,54 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 59.125.69.24
+- name: 🇳🇱 荷兰 (Netherlands) 05 (家宽) - Cloudfree
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Cloudfree
+  type: vless
+  server: 118.167.206.152
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Cloudfree
+  - 🇯🇵 日本 (Japan) 02 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  - 🇳🇱 荷兰 (Netherlands) 05 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Cloudfree
+  - 🇯🇵 日本 (Japan) 02 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  - 🇳🇱 荷兰 (Netherlands) 05 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES

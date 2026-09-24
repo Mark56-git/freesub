@@ -6,16 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - Cloudfree",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - Cloudfree",
+        "🇯🇵 日本 (Japan) 02 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree",
+        "🇳🇱 荷兰 (Netherlands) 05 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - Cloudfree",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - Cloudfree",
+        "🇯🇵 日本 (Japan) 02 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree",
+        "🇳🇱 荷兰 (Netherlands) 05 (家宽) - Cloudfree",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
