@@ -5,53 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
-  type: ss
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30003
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
   type: vmess
-  server: 47.243.65.243
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: ''
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
   type: vless
-  server: champion.xn--kivt58h.lol
-  port: 80
-  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +73,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +83,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

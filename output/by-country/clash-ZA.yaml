@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - Cloudfree
+- name: 🇿🇦 ZA 01 - Cloudfree
   type: ss
-  server: p1tun2.greewebservices.ir
-  port: 2060
+  server: 102.37.156.224
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇮🇷 IR 02 - Cloudfree
+- name: 🇿🇦 ZA 02 - Cloudfree
   type: ss
-  server: p1tun3.greewebservices.ir
-  port: 2070
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  password: tfAcRikawhNoZAhu
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - Cloudfree
-  - 🇮🇷 IR 02 - Cloudfree
+  - 🇿🇦 ZA 01 - Cloudfree
+  - 🇿🇦 ZA 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - Cloudfree
-  - 🇮🇷 IR 02 - Cloudfree
+  - 🇿🇦 ZA 01 - Cloudfree
+  - 🇿🇦 ZA 02 - Cloudfree
 rules:
 - MATCH,PROXIES
