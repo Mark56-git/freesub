@@ -17,17 +17,28 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 02 - Cloudfree
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 443
+  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aka.ms
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇰 LK 01 - Cloudfree
+  - 🇱🇰 LK 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 LK 01 - Cloudfree
+  - 🇱🇰 LK 02 - Cloudfree
 rules:
 - MATCH,PROXIES
