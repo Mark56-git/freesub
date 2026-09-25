@@ -6,21 +6,29 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
+  type: vless
+  server: 104.21.8.176
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /sync
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   type: vmess
   server: 89.223.95.77
   port: 22324
@@ -30,19 +38,46 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
-  type: vless
-  server: 34.92.145.185
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  type: vmess
+  server: 47.83.207.148
   port: 443
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  type: vless
+  server: 162.159.43.187
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Cloudfree
   type: vless
   server: 34.92.145.185
   port: 443
@@ -54,16 +89,45 @@ proxies:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Cloudfree
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - Cloudfree
   type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - Cloudfree
+  type: vless
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +138,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 07 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 08 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 09 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 10 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +153,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 07 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 08 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 09 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 10 - Cloudfree
 rules:
 - MATCH,PROXIES
