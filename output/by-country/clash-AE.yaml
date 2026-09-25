@@ -19,20 +19,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
-  type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
 rules:
 - MATCH,PROXIES
