@@ -6,120 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  type: vless
-  server: 172.64.158.146
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  type: vless
-  server: 172.64.32.108
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  type: vless
-  server: 172.67.152.162
+  server: 46.8.200.91
   port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /cmh
+    path: /cdn/v3/live
     headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
-  type: vless
-  server: 172.67.214.106
-  port: 443
-  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
-  type: vless
-  server: 172.64.42.85
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
 rules:
 - MATCH,PROXIES
