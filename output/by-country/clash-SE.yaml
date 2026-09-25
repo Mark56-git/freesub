@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 - Cloudfree
+- name: 🇸🇪 SE 01 - Cloudfree
   type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  server: 51.170.190.140
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: yVKPB5WeYxyaTioROYKKNwo3BlzJLFfUpUbI7ue6zVk=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 rules:
 - MATCH,PROXIES
