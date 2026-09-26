@@ -6,30 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - Cloudfree",
-        "🇫🇮 FI 02 - Cloudfree",
-        "🇫🇮 FI 03 - Cloudfree",
-        "🇫🇮 FI 04 - Cloudfree",
-        "🇫🇮 FI 05 - Cloudfree",
-        "🇫🇮 FI 06 - Cloudfree",
-        "🇫🇮 FI 07 - Cloudfree",
-        "🇫🇮 FI 08 - Cloudfree",
-        "🇫🇮 FI 09 - Cloudfree"
+        "🇫🇮 FI 01 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - Cloudfree",
-        "🇫🇮 FI 02 - Cloudfree",
-        "🇫🇮 FI 03 - Cloudfree",
-        "🇫🇮 FI 04 - Cloudfree",
-        "🇫🇮 FI 05 - Cloudfree",
-        "🇫🇮 FI 06 - Cloudfree",
-        "🇫🇮 FI 07 - Cloudfree",
-        "🇫🇮 FI 08 - Cloudfree",
-        "🇫🇮 FI 09 - Cloudfree"
+        "🇫🇮 FI 01 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },
