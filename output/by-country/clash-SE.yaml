@@ -6,10 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Cloudfree
   type: ss
-  server: 51.170.190.140
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: yVKPB5WeYxyaTioROYKKNwo3BlzJLFfUpUbI7ue6zVk=
+  server: 172.238.244.13
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
+- name: 🇸🇪 SE 02 - Cloudfree
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 rules:
 - MATCH,PROXIES
