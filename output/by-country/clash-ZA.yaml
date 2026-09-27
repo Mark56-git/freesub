@@ -12,12 +12,18 @@ proxies:
   password: UbkyrKvOtfSd2xQb
   udp: true
 - name: 🇿🇦 ZA 02 - Cloudfree
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
 - name: 🇿🇦 ZA 03 - Cloudfree
   type: ss
   server: 139.84.247.164

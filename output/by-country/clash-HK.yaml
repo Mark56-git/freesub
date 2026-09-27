@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: v7qnj9jvxtnpmj4l
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
   type: vmess
   server: 8.217.229.155
   port: 443
@@ -42,6 +20,73 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  type: vless
+  server: 162.159.0.169
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: v7qnj9jvxtnpmj4l
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
+  type: vmess
+  server: 47.243.80.106
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wwafj5LHl6bI8aU9.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: wwafj5LHl6bI8aU9.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +95,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +106,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 02 - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 03 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 04 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 06 - Cloudfree
 rules:
 - MATCH,PROXIES
