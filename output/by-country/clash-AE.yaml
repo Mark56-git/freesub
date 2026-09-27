@@ -19,32 +19,83 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: nahan-core.netizo09.workers.dev
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -66,6 +117,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +130,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
 rules:
 - MATCH,PROXIES
