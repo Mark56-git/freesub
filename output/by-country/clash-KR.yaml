@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Cloudfree
   type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: summer-hat-ba5c.430.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 - Cloudfree
+  type: vless
   server: 151.245.106.49
   port: 2053
   uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
@@ -16,7 +29,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 02 - Cloudfree
+- name: 🇰🇷 韩国 (South Korea) 03 - Cloudfree
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -26,7 +39,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - Cloudfree
+- name: 🇰🇷 韩国 (South Korea) 04 - Cloudfree
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 05 - Cloudfree
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -46,6 +72,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 02 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 03 - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 04 - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +82,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 02 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 03 - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 04 - Cloudfree
+  - 🇰🇷 韩国 (South Korea) 05 - Cloudfree
 rules:
 - MATCH,PROXIES
