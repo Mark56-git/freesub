@@ -4,33 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
-  type: vless
-  server: 188.114.96.3
-  port: 2087
-  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-98919a.motoricb.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
-    headers:
-      Host: ez-98919a.motoricb.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   type: vless
   server: 60.248.219.78
   port: 443
@@ -44,21 +18,31 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES
