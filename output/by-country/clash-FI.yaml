@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Cloudfree
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: a819a5fb-6177-486b-c6fc-35adb29a2b0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - Cloudfree
-  type: vless
   server: 151.101.56.6
   port: 443
   uuid: a819a5fb-6177-486b-c6fc-35adb29a2b0c
@@ -32,6 +18,44 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 02 - Cloudfree
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: a819a5fb-6177-486b-c6fc-35adb29a2b0c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 03 - Cloudfree
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - Cloudfree
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - Cloudfree
   - 🇫🇮 FI 02 - Cloudfree
+  - 🇫🇮 FI 03 - Cloudfree
+  - 🇫🇮 FI 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - Cloudfree
   - 🇫🇮 FI 02 - Cloudfree
+  - 🇫🇮 FI 03 - Cloudfree
+  - 🇫🇮 FI 04 - Cloudfree
 rules:
 - MATCH,PROXIES
