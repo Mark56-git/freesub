@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: media-se.compressor.work
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 95.163.232.171
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   type: vless
   server: fbsv6.guardora.pro
@@ -32,6 +32,55 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
+  type: vless
+  server: 217.19.122.200
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
+  type: ss
+  server: 195.58.48.137
+  port: 40401
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
+  type: vless
+  server: 172.67.182.245
+  port: 443
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
+  type: ss
+  server: 195.133.23.200
+  port: 40440
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +88,11 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +100,10 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
   - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 03 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 04 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 05 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 06 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 07 - Cloudfree
 rules:
 - MATCH,PROXIES
