@@ -6,19 +6,31 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   type: vless
-  server: 103.71.23.247
-  port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hk.152568.xyz
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
+    path: /
     headers:
-      Host: hk.152568.xyz
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   type: vless
   server: 185.112.249.201
   port: 2053
@@ -32,33 +44,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -81,7 +67,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,6 +76,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
-  - 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

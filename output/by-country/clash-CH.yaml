@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
+- name: 🇨🇭 CH 01 - Cloudfree
   type: vless
   server: 172.64.229.2
-  port: 8880
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -17,33 +17,31 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+- name: 🇨🇭 CH 02 - Cloudfree
   type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  - 🇨🇭 CH 01 - Cloudfree
+  - 🇨🇭 CH 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  - 🇨🇭 CH 01 - Cloudfree
+  - 🇨🇭 CH 02 - Cloudfree
 rules:
 - MATCH,PROXIES
