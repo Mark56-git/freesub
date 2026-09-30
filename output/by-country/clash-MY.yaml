@@ -50,6 +50,32 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.golnamakcert.top
+- name: 🇲🇾 MY 05 - Cloudfree
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.golnamakcert.top
+- name: 🇲🇾 MY 06 - Cloudfree
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +85,8 @@ proxy-groups:
   - 🇲🇾 MY 02 - Cloudfree
   - 🇲🇾 MY 03 - Cloudfree
   - 🇲🇾 MY 04 - Cloudfree
+  - 🇲🇾 MY 05 - Cloudfree
+  - 🇲🇾 MY 06 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +96,7 @@ proxy-groups:
   - 🇲🇾 MY 02 - Cloudfree
   - 🇲🇾 MY 03 - Cloudfree
   - 🇲🇾 MY 04 - Cloudfree
+  - 🇲🇾 MY 05 - Cloudfree
+  - 🇲🇾 MY 06 - Cloudfree
 rules:
 - MATCH,PROXIES
