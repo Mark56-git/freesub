@@ -6,36 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - Cloudfree",
-        "🇲🇾 MY 02 - Cloudfree",
-        "🇲🇾 MY 03 - Cloudfree",
-        "🇲🇾 MY 04 - Cloudfree",
-        "🇲🇾 MY 05 - Cloudfree",
-        "🇲🇾 MY 06 - Cloudfree",
-        "🇲🇾 MY 07 - Cloudfree",
-        "🇲🇾 MY 08 - Cloudfree",
-        "🇲🇾 MY 09 - Cloudfree",
-        "🇲🇾 MY 10 - Cloudfree",
-        "🇲🇾 MY 11 - Cloudfree",
-        "🇲🇾 MY 12 - Cloudfree"
+        "🇲🇾 MY 01 - Cloudfree"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - Cloudfree",
-        "🇲🇾 MY 02 - Cloudfree",
-        "🇲🇾 MY 03 - Cloudfree",
-        "🇲🇾 MY 04 - Cloudfree",
-        "🇲🇾 MY 05 - Cloudfree",
-        "🇲🇾 MY 06 - Cloudfree",
-        "🇲🇾 MY 07 - Cloudfree",
-        "🇲🇾 MY 08 - Cloudfree",
-        "🇲🇾 MY 09 - Cloudfree",
-        "🇲🇾 MY 10 - Cloudfree",
-        "🇲🇾 MY 11 - Cloudfree",
-        "🇲🇾 MY 12 - Cloudfree"
+        "🇲🇾 MY 01 - Cloudfree"
       ],
       "url": "https://www.google.com/generate_204"
     },

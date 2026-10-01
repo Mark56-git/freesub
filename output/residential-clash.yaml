@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
   type: vless
-  server: 172.64.154.8
-  port: 2095
+  server: 104.18.46.234
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,8 +30,37 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇺🇸 美国 (United States) 03 (家宽) - Cloudfree
+  type: vless
+  server: 154.17.228.81
+  port: 59686
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 123.714541.xyz
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  type: vmess
+  server: hi.northcluster.info
+  port: 52300
+  uuid: 6e571484-4166-4699-8f58-b34a1823691f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Cloudfree
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -50,7 +79,9 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇺🇸 美国 (United States) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +89,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇺🇸 美国 (United States) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES
