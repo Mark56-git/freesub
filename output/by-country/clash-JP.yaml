@@ -6,26 +6,28 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Cloudfree
   type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - Cloudfree
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /tyxyws
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 02 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - Cloudfree
   type: vmess
   server: 168.138.43.75
@@ -40,12 +42,14 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 04 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -60,77 +64,69 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - Cloudfree
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 07 - Cloudfree
   type: vless
-  server: 92.113.124.38
+  server: 137.220.221.179
   port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
 - name: 🇯🇵 日本 (Japan) 08 - Cloudfree
   type: vless
-  server: qp.lichao0223.cn
-  port: 49152
-  uuid: 71b460a1-8f78-45c5-fb3c-ab26a2a1f7b9
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: qp.lichao0223.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: qp.lichao0223.cn
 - name: 🇯🇵 日本 (Japan) 09 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - Cloudfree
-  type: vless
-  server: 45.159.50.233
-  port: 49152
-  uuid: 71b460a1-8f78-45c5-fb3c-ab26a2a1f7b9
+  type: vmess
+  server: 140.238.55.84
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: qp.lichao0223.cn
+  servername: 140.238.55.84
   network: ws
   ws-opts:
-    path: /
+    path: /or3
     headers:
-      Host: 45.159.50.233
+      Host: 140.238.55.84
+- name: 🇯🇵 日本 (Japan) 11 - Cloudfree
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
 - name: 🇯🇵 日本 (Japan) 12 - Cloudfree
   type: ss
   server: 149.22.87.204
@@ -139,10 +135,12 @@ proxies:
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 13 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -155,137 +153,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 15 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - Cloudfree
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - Cloudfree
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 23 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 27 - Cloudfree
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - Cloudfree
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -300,31 +167,37 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - Cloudfree
-  type: vless
-  server: 104.16.10.48
+- name: 🇯🇵 日本 (Japan) 17 - Cloudfree
+  type: ss
+  server: 149.22.87.204
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
+- name: 🇯🇵 日本 (Japan) 18 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -338,8 +211,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 32 - Cloudfree
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 21 - Cloudfree
   type: vless
   server: 137.220.221.179
   port: 443
@@ -347,6 +220,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 22 - Cloudfree
+  type: vless
+  server: 34.104.237.214
+  port: 443
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 23 - Cloudfree
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -375,15 +267,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - Cloudfree
   - 🇯🇵 日本 (Japan) 22 - Cloudfree
   - 🇯🇵 日本 (Japan) 23 - Cloudfree
-  - 🇯🇵 日本 (Japan) 24 - Cloudfree
-  - 🇯🇵 日本 (Japan) 25 - Cloudfree
-  - 🇯🇵 日本 (Japan) 26 - Cloudfree
-  - 🇯🇵 日本 (Japan) 27 - Cloudfree
-  - 🇯🇵 日本 (Japan) 28 - Cloudfree
-  - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -412,14 +295,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - Cloudfree
   - 🇯🇵 日本 (Japan) 22 - Cloudfree
   - 🇯🇵 日本 (Japan) 23 - Cloudfree
-  - 🇯🇵 日本 (Japan) 24 - Cloudfree
-  - 🇯🇵 日本 (Japan) 25 - Cloudfree
-  - 🇯🇵 日本 (Japan) 26 - Cloudfree
-  - 🇯🇵 日本 (Japan) 27 - Cloudfree
-  - 🇯🇵 日本 (Japan) 28 - Cloudfree
-  - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
 rules:
 - MATCH,PROXIES
