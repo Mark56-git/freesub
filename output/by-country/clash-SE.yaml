@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - Cloudfree
+- name: 🇸🇪 SE 01 - Cloudfree
   type: vless
-  server: 85.159.228.223
+  server: 199.68.198.13
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - Cloudfree
+  - 🇸🇪 SE 01 - Cloudfree
 rules:
 - MATCH,PROXIES

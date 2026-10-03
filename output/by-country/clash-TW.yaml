@@ -17,29 +17,25 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Cloudfree
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - Cloudfree
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - Cloudfree
   type: vmess
   server: 165.154.195.38
@@ -100,26 +96,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - Cloudfree
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - Cloudfree
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,8 +110,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 07 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 08 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 09 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 10 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 11 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,7 +124,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 07 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 08 - Cloudfree
   - 🇹🇼 中国台湾 (Taiwan) 09 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 10 - Cloudfree
-  - 🇹🇼 中国台湾 (Taiwan) 11 - Cloudfree
 rules:
 - MATCH,PROXIES
