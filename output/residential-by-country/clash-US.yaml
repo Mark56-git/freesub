@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - Cloudfree
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 172.64.42.85
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /?ed=2560security=tls
     headers:
-      Host: sub.merky.top
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - Cloudfree
+  - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - Cloudfree
+  - 🇺🇸 美国 (United States) 01 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES

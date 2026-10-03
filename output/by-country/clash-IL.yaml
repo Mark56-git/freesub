@@ -16,17 +16,33 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇱 IL 02 - Cloudfree
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 IL 01 - Cloudfree
+  - 🇮🇱 IL 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 IL 01 - Cloudfree
+  - 🇮🇱 IL 02 - Cloudfree
 rules:
 - MATCH,PROXIES
