@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - Cloudfree
-  type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+- name: 🇮🇪 IE 01 - Cloudfree
+  type: ss
+  server: 20.107.219.181
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 2fGnKgP8k8EHFuvj
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - Cloudfree
+  - 🇮🇪 IE 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - Cloudfree
+  - 🇮🇪 IE 01 - Cloudfree
 rules:
 - MATCH,PROXIES
