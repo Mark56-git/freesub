@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 CO 01 - Cloudfree
+- name: 🇮🇱 IL 01 - Cloudfree
   type: ss
-  server: 149.104.107.41
-  port: 8090
+  server: 45.144.172.123
+  port: 20998
   cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  password: 78235e7dc55e9ad1
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 CO 01 - Cloudfree
+  - 🇮🇱 IL 01 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 CO 01 - Cloudfree
+  - 🇮🇱 IL 01 - Cloudfree
 rules:
 - MATCH,PROXIES

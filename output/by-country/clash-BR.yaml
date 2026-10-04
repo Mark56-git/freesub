@@ -14,37 +14,23 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
-- name: 🇧🇷 BR 02 - Cloudfree
-  type: vless
-  server: 35.247.243.231
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - Cloudfree
-  - 🇧🇷 BR 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - Cloudfree
-  - 🇧🇷 BR 02 - Cloudfree
 rules:
 - MATCH,PROXIES
