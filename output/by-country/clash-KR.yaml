@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Cloudfree
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 - Cloudfree
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -18,17 +25,7 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 02 - Cloudfree
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 03 - Cloudfree
   type: vmess
   server: 132.145.80.230
@@ -45,33 +42,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇰🇷 韩国 (South Korea) 04 - Cloudfree
-  type: ss
-  server: 141.164.45.187
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - Cloudfree
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 - Cloudfree
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - Cloudfree
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -85,7 +55,33 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: 'null'
+- name: 🇰🇷 韩国 (South Korea) 05 - Cloudfree
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 - Cloudfree
+  type: ss
+  server: 141.164.45.187
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - Cloudfree
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 08 - Cloudfree
   type: vmess
   server: 132.145.80.230
@@ -102,12 +98,15 @@ proxies:
     headers:
       Host: None
 - name: 🇰🇷 韩国 (South Korea) 09 - Cloudfree
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - Cloudfree
   type: vmess
   server: 140.238.2.250
@@ -119,45 +118,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 11 - Cloudfree
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 12 - Cloudfree
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - Cloudfree
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - Cloudfree
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 15 - Cloudfree
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -186,9 +156,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 11 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 12 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 13 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 14 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 15 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -206,8 +173,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 11 - Cloudfree
   - 🇰🇷 韩国 (South Korea) 12 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 13 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 14 - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 15 - Cloudfree
 rules:
 - MATCH,PROXIES
