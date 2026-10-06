@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - Cloudfree
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -20,71 +20,17 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇧🇷 BR 02 - Cloudfree
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇧🇷 BR 03 - Cloudfree
-  type: vmess
-  server: 89.39.161.157
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇧🇷 BR 04 - Cloudfree
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - Cloudfree
-  - 🇧🇷 BR 02 - Cloudfree
-  - 🇧🇷 BR 03 - Cloudfree
-  - 🇧🇷 BR 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - Cloudfree
-  - 🇧🇷 BR 02 - Cloudfree
-  - 🇧🇷 BR 03 - Cloudfree
-  - 🇧🇷 BR 04 - Cloudfree
 rules:
 - MATCH,PROXIES

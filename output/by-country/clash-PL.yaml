@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Cloudfree
   type: vless
-  server: 70.34.252.154
-  port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  server: 78.17.109.97
+  port: 6443
+  uuid: dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.252.154
+  reality-opts:
+    public-key: NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI
+  servername: ok.ru
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - Cloudfree
   type: vless
   server: 70.34.252.154
@@ -56,6 +55,19 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
+- name: 🇵🇱 PL 05 - Cloudfree
+  type: vless
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +77,7 @@ proxy-groups:
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
   - 🇵🇱 PL 04 - Cloudfree
+  - 🇵🇱 PL 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +87,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
   - 🇵🇱 PL 04 - Cloudfree
+  - 🇵🇱 PL 05 - Cloudfree
 rules:
 - MATCH,PROXIES
