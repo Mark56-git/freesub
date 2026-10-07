@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - Cloudfree
-  type: ss
-  server: 20.223.236.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: CNL3mxdfZKiPKizL
-  udp: true
-- name: 🇮🇪 IE 02 - Cloudfree
-  type: ss
-  server: 20.223.236.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: CNL3mxdfZKiPKizL
-  udp: true
-- name: 🇮🇪 IE 03 - Cloudfree
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -32,7 +18,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 04 - Cloudfree
+- name: 🇮🇪 IE 02 - Cloudfree
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -53,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - Cloudfree
   - 🇮🇪 IE 02 - Cloudfree
-  - 🇮🇪 IE 03 - Cloudfree
-  - 🇮🇪 IE 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - Cloudfree
   - 🇮🇪 IE 02 - Cloudfree
-  - 🇮🇪 IE 03 - Cloudfree
-  - 🇮🇪 IE 04 - Cloudfree
 rules:
 - MATCH,PROXIES

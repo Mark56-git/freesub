@@ -6,63 +6,62 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Cloudfree
   type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 172.67.195.79
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: uwu.blueknightnet.qzz.io
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: ccc.010304.xyz
+      Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 02 - Cloudfree
   type: vless
-  server: 104.17.189.78
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /ws
+    path: /fp
     headers:
-      Host: a.cwvps.eu.org
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 03 - Cloudfree
   type: vless
-  server: 104.16.10.135
+  server: cf.130519.xyz
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MTMVPN--MTMVPN?ed=512
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: a.cwvps.eu.org
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 04 - Cloudfree
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: vless.gem-audio5.us.ci
+  port: 443
+  uuid: bd517e58-d1cb-4eee-bd58-5f2723e7cd02
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: vless.gem-audio5.us.ci
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /
     headers:
-      Host: fr.api-music-fa.com
+      Host: vless.gem-audio5.us.ci
 - name: 🌐 其他地区 (Other) 05 - Cloudfree
   type: vless
-  server: 172.67.195.79
+  server: 104.21.5.128
   port: 2053
   uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   udp: true
@@ -76,20 +75,63 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 🌐 其他地区 (Other) 06 - Cloudfree
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: vless2.gem-audio5.us.ci
+  port: 443
+  uuid: bd517e58-d1cb-4eee-bd58-5f2723e7cd02
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vless2.gem-audio5.us.ci
   network: ws
   ws-opts:
-    path: /fp
+    path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: vless2.gem-audio5.us.ci
 - name: 🌐 其他地区 (Other) 07 - Cloudfree
   type: vless
-  server: 188.114.97.6
+  server: 104.16.10.135
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws#/?TELEGRAM--MTMVPN--MTMVPN?ed=512
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 08 - Cloudfree
+  type: vless
+  server: 172.67.133.118
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 09 - Cloudfree
+  type: vless
+  server: s3ws.ragingbull.de5.net
+  port: 443
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: s3ws.ragingbull.de5.net
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s3ws.ragingbull.de5.net
+- name: 🌐 其他地区 (Other) 10 - Cloudfree
+  type: vless
+  server: 104.25.88.220
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -101,89 +143,35 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 08 - Cloudfree
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 09 - Cloudfree
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 10 - Cloudfree
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 11 - Cloudfree
   type: vless
-  server: 172.67.181.232
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 12 - Cloudfree
-  type: vless
-  server: 172.67.76.40
+  server: vless4.gem-audio5.us.ci
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: bd517e58-d1cb-4eee-bd58-5f2723e7cd02
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: vless4.gem-audio5.us.ci
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 13 - Cloudfree
+      Host: vless4.gem-audio5.us.ci
+- name: 🌐 其他地区 (Other) 12 - Cloudfree
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 14 - Cloudfree
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 13 - Cloudfree
   type: vless
   server: cf.090227.xyz
   port: 443
@@ -197,7 +185,133 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 14 - Cloudfree
+  type: vless
+  server: 104.17.189.78
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
 - name: 🌐 其他地区 (Other) 15 - Cloudfree
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 16 - Cloudfree
+  type: vless
+  server: 172.67.76.40
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 17 - Cloudfree
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 18 - Cloudfree
+  type: vless
+  server: 172.67.181.232
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 19 - Cloudfree
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 20 - Cloudfree
+  type: vless
+  server: vless4.gem-audio4.us.ci
+  port: 443
+  uuid: 32900b5e-aedc-4fb2-9f06-e3f92d1e2422
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless4.gem-audio4.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless4.gem-audio4.us.ci
+- name: 🌐 其他地区 (Other) 21 - Cloudfree
+  type: vless
+  server: vless3.gem-audio3.us.ci
+  port: 443
+  uuid: f759cead-5aca-4c72-8143-e802698da73b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless3.gem-audio3.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless3.gem-audio3.us.ci
+- name: 🌐 其他地区 (Other) 22 - Cloudfree
+  type: vless
+  server: 104.21.84.167
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 23 - Cloudfree
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -210,20 +324,33 @@ proxies:
     path: /fpfp=chrome
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 16 - Cloudfree
+- name: 🌐 其他地区 (Other) 24 - Cloudfree
   type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /api/voip/updates/static/fr2035
     headers:
-      Host: jp3.yohototo.top
+      Host: fr.api-music-fa.com
+- name: 🌐 其他地区 (Other) 25 - Cloudfree
+  type: vless
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -245,6 +372,15 @@ proxy-groups:
   - 🌐 其他地区 (Other) 14 - Cloudfree
   - 🌐 其他地区 (Other) 15 - Cloudfree
   - 🌐 其他地区 (Other) 16 - Cloudfree
+  - 🌐 其他地区 (Other) 17 - Cloudfree
+  - 🌐 其他地区 (Other) 18 - Cloudfree
+  - 🌐 其他地区 (Other) 19 - Cloudfree
+  - 🌐 其他地区 (Other) 20 - Cloudfree
+  - 🌐 其他地区 (Other) 21 - Cloudfree
+  - 🌐 其他地区 (Other) 22 - Cloudfree
+  - 🌐 其他地区 (Other) 23 - Cloudfree
+  - 🌐 其他地区 (Other) 24 - Cloudfree
+  - 🌐 其他地区 (Other) 25 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -266,5 +402,14 @@ proxy-groups:
   - 🌐 其他地区 (Other) 14 - Cloudfree
   - 🌐 其他地区 (Other) 15 - Cloudfree
   - 🌐 其他地区 (Other) 16 - Cloudfree
+  - 🌐 其他地区 (Other) 17 - Cloudfree
+  - 🌐 其他地区 (Other) 18 - Cloudfree
+  - 🌐 其他地区 (Other) 19 - Cloudfree
+  - 🌐 其他地区 (Other) 20 - Cloudfree
+  - 🌐 其他地区 (Other) 21 - Cloudfree
+  - 🌐 其他地区 (Other) 22 - Cloudfree
+  - 🌐 其他地区 (Other) 23 - Cloudfree
+  - 🌐 其他地区 (Other) 24 - Cloudfree
+  - 🌐 其他地区 (Other) 25 - Cloudfree
 rules:
 - MATCH,PROXIES
