@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Cloudfree
   type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 02 - Cloudfree
-  type: vless
   server: 166.88.35.245
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -30,7 +17,7 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 03 - Cloudfree
+- name: 🇲🇾 MY 02 - Cloudfree
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -40,6 +27,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 03 - Cloudfree
+  type: vless
+  server: 45.195.69.230
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
