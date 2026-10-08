@@ -5,36 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Cloudfree
-  type: vless
-  server: 175.195.149.58
-  port: 10280
-  uuid: 8638521a-7d64-4ad0-9112-83aa1fc19867
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇯🇵 日本 (Japan) 02 - Cloudfree
   type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  server: 104.17.107.254
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /announcement?ed=2048
     headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 03 - Cloudfree
   type: vless
-  server: 104.21.70.21
+  server: 104.17.146.66
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp-osa.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: jp-osa.862400.xyz
+- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
+  type: vless
+  server: 104.21.34.106
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -46,61 +67,20 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
-  type: vless
-  server: 64.204.49.68
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
-  type: vless
-  server: 57.129.52.47
-  port: 52014
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
-  type: vless
-  server: 45.76.87.125
-  port: 14750
-  uuid: 9c090291-dd8d-454c-98df-3ca2178fcf01
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇯🇵 日本 (Japan) 07 - Cloudfree
   type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
+  server: 104.17.159.6
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /announcement?ed=2048
     headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev
+      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 08 - Cloudfree
   type: vmess
   server: 168.138.43.75
@@ -115,32 +95,39 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 09 - Cloudfree
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
   type: vless
-  server: 188.114.97.6
+  server: 104.17.185.110
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /announcement?ed=2048
     headers:
-      Host: jp3.yohototo.top
+      Host: jp-osa.862400.xyz
+- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
+  type: vless
+  server: 104.20.53.189
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp-osa.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 11 - Cloudfree
   type: vless
-  server: 43.129.80.179
-  port: 8443
+  server: 104.21.33.59
+  port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -153,18 +140,18 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 12 - Cloudfree
   type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  server: 104.17.119.121
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /announcement?ed=2048
     headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 13 - Cloudfree
   type: vmess
   server: 168.138.43.75
@@ -179,38 +166,40 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 168.138.43.75
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 14 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 15 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
   type: vless
-  server: 116.204.164.27
-  port: 7443
-  uuid: 3e438472-0f1e-4bbf-be5a-67d034afd8c0
+  server: 35.78.243.103
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: x.m-90.xyz
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: t.me/TEAMNETGRATISCOL
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: x.m-90.xyz
+- name: 🇯🇵 日本 (Japan) 15 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 17 - Cloudfree
   type: vless
-  server: 172.67.217.240
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -224,32 +213,31 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 18 - Cloudfree
   type: vless
-  server: 137.220.221.179
+  server: 104.17.108.119
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /announcement?ed=2048
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
+      Host: jp-osa.862400.xyz
+- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
   type: ss
-  server: 149.22.87.241
+  server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 21 - Cloudfree
   type: vmess
@@ -265,305 +253,57 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 22 - Cloudfree
   type: vless
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  server: 104.17.145.110
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /announcement?ed=2048
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 23 - Cloudfree
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: throbbing-haze-fbde.388-6c4.workers.dev
-- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
-  type: vless
-  server: 37.120.222.70
-  port: 8082
-  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - Cloudfree
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - Cloudfree
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 32 - Cloudfree
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 33 - Cloudfree
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 34 - Cloudfree
-  type: vless
-  server: 79.137.199.52
-  port: 21
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 36 - Cloudfree
-  type: vless
-  server: jeffsubs.com
-  port: 443
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jeffsubs.com
-  network: ws
-  ws-opts:
-    path: /nnuyws
-    headers:
-      Host: jeffsubs.com
-- name: 🇯🇵 日本 (Japan) 37 - Cloudfree
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 38 - Cloudfree
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 39 - Cloudfree
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 40 - Cloudfree
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - Cloudfree
-  type: vless
-  server: 54.178.110.17
-  port: 4443
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - Cloudfree
-  type: vless
-  server: 128.241.25.72
-  port: 30021
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 43 - Cloudfree
   type: ss
   server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 44 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
   type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 45 - Cloudfree
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
+  type: vless
+  server: 104.25.251.68
+  port: 443
+  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp-osa.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: jp-osa.862400.xyz
+- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -578,92 +318,23 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 46 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 27 - Cloudfree
   type: vless
-  server: 8.219.155.125
+  server: 137.220.221.179
   port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇯🇵 日本 (Japan) 47 - Cloudfree
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 48 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 28 - Cloudfree
   type: vless
-  server: 162.159.228.255
+  server: 137.220.221.179
   port: 443
-  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - Cloudfree
-  type: vless
-  server: 116.204.164.5
-  port: 7443
-  uuid: 2416ff70-cb17-4cdc-834d-a89c00261e01
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - Cloudfree
-  type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 51 - Cloudfree
-  type: vless
-  server: 128.241.25.215
-  port: 30036
-  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 52 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
   type: vless
   server: 137.220.221.179
   port: 443
@@ -705,29 +376,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - Cloudfree
   - 🇯🇵 日本 (Japan) 28 - Cloudfree
   - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
-  - 🇯🇵 日本 (Japan) 33 - Cloudfree
-  - 🇯🇵 日本 (Japan) 34 - Cloudfree
-  - 🇯🇵 日本 (Japan) 35 - Cloudfree
-  - 🇯🇵 日本 (Japan) 36 - Cloudfree
-  - 🇯🇵 日本 (Japan) 37 - Cloudfree
-  - 🇯🇵 日本 (Japan) 38 - Cloudfree
-  - 🇯🇵 日本 (Japan) 39 - Cloudfree
-  - 🇯🇵 日本 (Japan) 40 - Cloudfree
-  - 🇯🇵 日本 (Japan) 41 - Cloudfree
-  - 🇯🇵 日本 (Japan) 42 - Cloudfree
-  - 🇯🇵 日本 (Japan) 43 - Cloudfree
-  - 🇯🇵 日本 (Japan) 44 - Cloudfree
-  - 🇯🇵 日本 (Japan) 45 - Cloudfree
-  - 🇯🇵 日本 (Japan) 46 - Cloudfree
-  - 🇯🇵 日本 (Japan) 47 - Cloudfree
-  - 🇯🇵 日本 (Japan) 48 - Cloudfree
-  - 🇯🇵 日本 (Japan) 49 - Cloudfree
-  - 🇯🇵 日本 (Japan) 50 - Cloudfree
-  - 🇯🇵 日本 (Japan) 51 - Cloudfree
-  - 🇯🇵 日本 (Japan) 52 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -762,28 +410,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - Cloudfree
   - 🇯🇵 日本 (Japan) 28 - Cloudfree
   - 🇯🇵 日本 (Japan) 29 - Cloudfree
-  - 🇯🇵 日本 (Japan) 30 - Cloudfree
-  - 🇯🇵 日本 (Japan) 31 - Cloudfree
-  - 🇯🇵 日本 (Japan) 32 - Cloudfree
-  - 🇯🇵 日本 (Japan) 33 - Cloudfree
-  - 🇯🇵 日本 (Japan) 34 - Cloudfree
-  - 🇯🇵 日本 (Japan) 35 - Cloudfree
-  - 🇯🇵 日本 (Japan) 36 - Cloudfree
-  - 🇯🇵 日本 (Japan) 37 - Cloudfree
-  - 🇯🇵 日本 (Japan) 38 - Cloudfree
-  - 🇯🇵 日本 (Japan) 39 - Cloudfree
-  - 🇯🇵 日本 (Japan) 40 - Cloudfree
-  - 🇯🇵 日本 (Japan) 41 - Cloudfree
-  - 🇯🇵 日本 (Japan) 42 - Cloudfree
-  - 🇯🇵 日本 (Japan) 43 - Cloudfree
-  - 🇯🇵 日本 (Japan) 44 - Cloudfree
-  - 🇯🇵 日本 (Japan) 45 - Cloudfree
-  - 🇯🇵 日本 (Japan) 46 - Cloudfree
-  - 🇯🇵 日本 (Japan) 47 - Cloudfree
-  - 🇯🇵 日本 (Japan) 48 - Cloudfree
-  - 🇯🇵 日本 (Japan) 49 - Cloudfree
-  - 🇯🇵 日本 (Japan) 50 - Cloudfree
-  - 🇯🇵 日本 (Japan) 51 - Cloudfree
-  - 🇯🇵 日本 (Japan) 52 - Cloudfree
 rules:
 - MATCH,PROXIES
