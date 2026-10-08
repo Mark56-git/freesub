@@ -5,57 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 02 - Cloudfree
   type: vless
-  server: 104.17.107.254
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 03 - Cloudfree
-  type: vless
-  server: 104.17.146.66
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
-  type: vless
-  server: 104.21.34.106
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -67,21 +18,42 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 02 - Cloudfree
   type: vless
-  server: 104.17.159.6
+  server: 188.114.97.6
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#SAFEWEBSBOT_SAFEWEBSBOT_SAFEWEBSBOT__SAFEWEBSBOT
     headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 08 - Cloudfree
+      Host: lucasjow.us.ci
+- name: 🇯🇵 日本 (Japan) 03 - Cloudfree
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - Cloudfree
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 05 - Cloudfree
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -96,37 +68,16 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 09 - Cloudfree
-  type: vless
-  server: 104.17.185.110
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+- name: 🇯🇵 日本 (Japan) 06 - Cloudfree
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 07 - Cloudfree
   type: vless
-  server: 104.20.53.189
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 11 - Cloudfree
-  type: vless
-  server: 104.21.33.59
+  server: 104.16.10.185
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -138,38 +89,51 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 08 - Cloudfree
   type: vless
-  server: 104.17.119.121
+  server: 104.21.0.87
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /tyxyws
     headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 13 - Cloudfree
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 14 - Cloudfree
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 09 - Cloudfree
   type: vless
-  server: 35.78.243.103
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 10 - Cloudfree
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - Cloudfree
+  type: vless
+  server: 129.225.175.227
   port: 443
   uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
@@ -178,25 +142,73 @@ proxies:
   servername: x.m-90.xyz
   network: ws
   ws-opts:
-    path: t.me/TEAMNETGRATISCOL
+    path: /t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
+- name: 🇯🇵 日本 (Japan) 12 - Cloudfree
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 13 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14 - Cloudfree
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 15 - Cloudfree
   type: vless
-  server: 137.220.221.179
+  server: 188.114.97.6
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇯🇵 日本 (Japan) 16 - Cloudfree
   type: vless
-  server: 137.220.221.179
+  server: 104.21.16.152
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jeffsubs.com
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
 - name: 🇯🇵 日本 (Japan) 17 - Cloudfree
   type: vless
   server: 104.16.10.104
@@ -212,32 +224,40 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 18 - Cloudfree
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
   type: vless
-  server: 104.17.108.119
+  server: 172.67.213.168
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jeffsubs.com
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /nnuyws
     headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 19 - Cloudfree
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
   type: ss
   server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 20 - Cloudfree
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 21 - Cloudfree
   type: vmess
@@ -253,31 +273,24 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 168.138.43.75
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 22 - Cloudfree
   type: vless
-  server: 104.17.145.110
+  server: 172.67.217.240
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /tyxyws
     headers:
-      Host: jp-osa.862400.xyz
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 23 - Cloudfree
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
   type: vless
-  server: cf.877774.xyz
+  server: 188.114.97.6
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -286,24 +299,24 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---mehrosaboran
     headers:
       Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 24 - Cloudfree
   type: vless
-  server: 104.25.251.68
+  server: 104.21.34.106
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /tyxyws
     headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - Cloudfree
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -317,16 +330,74 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
+      Host: none
+- name: 🇯🇵 日本 (Japan) 26 - Cloudfree
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 27 - Cloudfree
-  type: vless
-  server: 137.220.221.179
+  type: ss
+  server: 84.247.155.196
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 28 - Cloudfree
+  type: vmess
+  server: 140.238.55.84
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 140.238.55.84
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: 140.238.55.84
+- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 30 - Cloudfree
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 31 - Cloudfree
   type: vless
   server: 137.220.221.179
   port: 443
@@ -334,7 +405,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - Cloudfree
+- name: 🇯🇵 日本 (Japan) 32 - Cloudfree
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 33 - Cloudfree
   type: vless
   server: 137.220.221.179
   port: 443
@@ -376,6 +455,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - Cloudfree
   - 🇯🇵 日本 (Japan) 28 - Cloudfree
   - 🇯🇵 日本 (Japan) 29 - Cloudfree
+  - 🇯🇵 日本 (Japan) 30 - Cloudfree
+  - 🇯🇵 日本 (Japan) 31 - Cloudfree
+  - 🇯🇵 日本 (Japan) 32 - Cloudfree
+  - 🇯🇵 日本 (Japan) 33 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -410,5 +493,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - Cloudfree
   - 🇯🇵 日本 (Japan) 28 - Cloudfree
   - 🇯🇵 日本 (Japan) 29 - Cloudfree
+  - 🇯🇵 日本 (Japan) 30 - Cloudfree
+  - 🇯🇵 日本 (Japan) 31 - Cloudfree
+  - 🇯🇵 日本 (Japan) 32 - Cloudfree
+  - 🇯🇵 日本 (Japan) 33 - Cloudfree
 rules:
 - MATCH,PROXIES

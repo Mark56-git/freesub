@@ -19,18 +19,18 @@ proxies:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - Cloudfree
   type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fdghyt.com
+  servername: crt.dodopanel.biz
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /vless-ws
     headers:
-      Host: fdghyt.com
+      Host: 141.0.187.16
 - name: 🇪🇪 EE 03 - Cloudfree
   type: vless
   server: 77.72.85.247
@@ -47,36 +47,19 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 04 - Cloudfree
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 94.183.170.135
+      Host: fdghyt.com
 - name: 🇪🇪 EE 05 - Cloudfree
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - Cloudfree
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - Cloudfree
   type: vless
   server: 77.72.85.246
   port: 8443
@@ -90,6 +73,29 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 06 - Cloudfree
+  type: vless
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 07 - Cloudfree
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 08 - Cloudfree
   type: vless
   server: 77.72.85.247
@@ -120,7 +126,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 10 - Cloudfree
   type: vless
-  server: 194.26.141.148
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -134,18 +140,17 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 11 - Cloudfree
   type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: fdghyt.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 12 - Cloudfree
   type: vless
   server: 94.183.170.135
@@ -158,31 +163,13 @@ proxies:
 - name: 🇪🇪 EE 13 - Cloudfree
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 14 - Cloudfree
-  type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 15 - Cloudfree
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 14 - Cloudfree
   type: vless
   server: 94.183.170.135
   port: 443
@@ -195,7 +182,42 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 15 - Cloudfree
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 16 - Cloudfree
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 17 - Cloudfree
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 18 - Cloudfree
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -209,6 +231,15 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 19 - Cloudfree
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -230,6 +261,9 @@ proxy-groups:
   - 🇪🇪 EE 14 - Cloudfree
   - 🇪🇪 EE 15 - Cloudfree
   - 🇪🇪 EE 16 - Cloudfree
+  - 🇪🇪 EE 17 - Cloudfree
+  - 🇪🇪 EE 18 - Cloudfree
+  - 🇪🇪 EE 19 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -251,5 +285,8 @@ proxy-groups:
   - 🇪🇪 EE 14 - Cloudfree
   - 🇪🇪 EE 15 - Cloudfree
   - 🇪🇪 EE 16 - Cloudfree
+  - 🇪🇪 EE 17 - Cloudfree
+  - 🇪🇪 EE 18 - Cloudfree
+  - 🇪🇪 EE 19 - Cloudfree
 rules:
 - MATCH,PROXIES
