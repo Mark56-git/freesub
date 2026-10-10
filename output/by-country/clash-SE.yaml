@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - Cloudfree
   type: vless
+  server: 216.24.57.73
+  port: 2087
+  uuid: b5ba2130-42d2-433f-953e-fca1c60cbc28
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: azsobhekhran.ticklitickli.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: azsobhekhran.ticklitickli.ir
+- name: 🇸🇪 SE 02 - Cloudfree
+  type: vless
   server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - Cloudfree
+  - 🇸🇪 SE 02 - Cloudfree
 rules:
 - MATCH,PROXIES
