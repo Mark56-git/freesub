@@ -19,6 +19,13 @@ proxies:
     headers:
       Host: lucasjow.us.ci
 - name: 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  type: ss
+  server: www.asamping.ir
+  port: 1468
+  cipher: aes-128-gcm
+  password: l2NidZbckMu4PnIHsJTYJg
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
   type: vless
   server: 203.202.232.211
   port: 443
@@ -39,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
+  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 rules:
 - MATCH,PROXIES
