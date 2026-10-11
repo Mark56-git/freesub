@@ -32,14 +32,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.148.73.173
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -60,8 +53,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +61,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Cloudfree
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Cloudfree
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - Cloudfree
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - Cloudfree
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -17,11 +32,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - Cloudfree
+  - 🇫🇮 FI 02 - Cloudfree
+  - 🇫🇮 FI 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - Cloudfree
+  - 🇫🇮 FI 02 - Cloudfree
+  - 🇫🇮 FI 03 - Cloudfree
 rules:
 - MATCH,PROXIES
