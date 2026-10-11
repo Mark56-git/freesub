@@ -5,6 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  type: vmess
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
   type: vless
   server: 59.125.69.24
   port: 443
@@ -18,7 +50,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Cloudfree
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
   type: vless
   server: 103.148.73.173
   port: 8443
@@ -32,7 +64,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.148.73.173
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Cloudfree
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -52,15 +84,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Cloudfree
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Cloudfree
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Cloudfree
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Cloudfree
 rules:
 - MATCH,PROXIES
