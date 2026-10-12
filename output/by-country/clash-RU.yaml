@@ -5,38 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
   type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: lucky-cake-4f58.318-5ee.workers.dev
+      Host: my.kempekl.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
-  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
 rules:
 - MATCH,PROXIES

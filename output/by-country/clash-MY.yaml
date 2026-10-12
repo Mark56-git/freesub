@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - Cloudfree
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /platform102
     headers:
-      Host: ccc.010304.xyz
+      Host: platform102.halalkhor.info
 - name: 🇲🇾 MY 02 - Cloudfree
   type: vless
   server: 216.173.67.59
@@ -33,19 +32,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 03 - Cloudfree
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 04 - Cloudfree
   type: vless
   server: platform101.golnamakcert.top
   port: 80
@@ -66,7 +52,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - Cloudfree
   - 🇲🇾 MY 02 - Cloudfree
   - 🇲🇾 MY 03 - Cloudfree
-  - 🇲🇾 MY 04 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +60,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - Cloudfree
   - 🇲🇾 MY 02 - Cloudfree
   - 🇲🇾 MY 03 - Cloudfree
-  - 🇲🇾 MY 04 - Cloudfree
 rules:
 - MATCH,PROXIES
