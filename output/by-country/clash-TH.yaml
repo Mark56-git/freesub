@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Cloudfree
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 02 - Cloudfree
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 03 - Cloudfree
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 04 - Cloudfree
   type: vless
   server: 104.16.10.2
   port: 443
@@ -18,7 +48,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 02 - Cloudfree
+- name: 🇹🇭 TH 05 - Cloudfree
   type: vless
   server: 104.16.10.185
   port: 443
@@ -32,7 +62,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - Cloudfree
+- name: 🇹🇭 TH 06 - Cloudfree
   type: vless
   server: 103.86.49.57
   port: 80
@@ -45,43 +75,13 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 04 - Cloudfree
+- name: 🇹🇭 TH 07 - Cloudfree
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 05 - Cloudfree
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 06 - Cloudfree
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 07 - Cloudfree
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇭 TH 08 - Cloudfree
   type: vmess
   server: 119.46.51.45
