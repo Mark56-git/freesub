@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Cloudfree
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,6 +19,34 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Cloudfree
   type: vless
+  server: 57.129.52.47
+  port: 52014
+  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+  type: vless
   server: zordbx861.233874.xyz
   port: 8888
   uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
@@ -29,7 +57,7 @@ proxies:
     public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - Cloudfree
+- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -42,7 +70,35 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - Cloudfree
+- name: 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+  type: vless
+  server: 116.204.164.17
+  port: 7443
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
+  type: vless
+  server: 57.129.130.63
+  port: 52014
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
   type: vless
   server: 31.57.190.49
   port: 443
@@ -56,20 +112,7 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 05 - Cloudfree
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - Cloudfree
+- name: 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -82,34 +125,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
-  type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+- name: 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -136,6 +152,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,5 +167,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 08 - Cloudfree
   - 🇦🇪 阿联酋 (UAE) 09 - Cloudfree
+  - 🇦🇪 阿联酋 (UAE) 10 - Cloudfree
 rules:
 - MATCH,PROXIES

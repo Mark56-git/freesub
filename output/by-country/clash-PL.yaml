@@ -6,62 +6,27 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Cloudfree
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: '%25'
-    headers:
-      Host: lucasjow.us.ci
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - Cloudfree
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP
-    headers:
-      Host: lucasjow.us.ci
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 03 - Cloudfree
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---mehrosaboranfp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇵🇱 PL 04 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇵🇱 PL 05 - Cloudfree
-  type: vless
   server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -69,57 +34,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 06 - Cloudfree
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇵🇱 PL 08 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---DailyConfigs---DailyConfigs---DailyConfigs
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇵🇱 PL 09 - Cloudfree
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip
-    headers:
-      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,12 +42,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - Cloudfree
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
-  - 🇵🇱 PL 04 - Cloudfree
-  - 🇵🇱 PL 05 - Cloudfree
-  - 🇵🇱 PL 06 - Cloudfree
-  - 🇵🇱 PL 07 - Cloudfree
-  - 🇵🇱 PL 08 - Cloudfree
-  - 🇵🇱 PL 09 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,11 +50,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - Cloudfree
   - 🇵🇱 PL 02 - Cloudfree
   - 🇵🇱 PL 03 - Cloudfree
-  - 🇵🇱 PL 04 - Cloudfree
-  - 🇵🇱 PL 05 - Cloudfree
-  - 🇵🇱 PL 06 - Cloudfree
-  - 🇵🇱 PL 07 - Cloudfree
-  - 🇵🇱 PL 08 - Cloudfree
-  - 🇵🇱 PL 09 - Cloudfree
 rules:
 - MATCH,PROXIES

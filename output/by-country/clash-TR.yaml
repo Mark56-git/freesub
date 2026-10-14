@@ -28,22 +28,6 @@ proxies:
   skip-cert-verify: true
   servername: googol.wookshop.ir
 - name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  type: ss
-  server: 94.184.42.18
-  port: 8880
-  cipher: chacha20-ietf-poly1305
-  password: AWVyUgWWLc4G47GNo_bx2w
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  type: vless
-  server: googol.wookshop.ir
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
   type: vless
   server: 206.1.102.81
   port: 17915
@@ -60,8 +44,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,7 +52,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
   - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 04 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 05 - Cloudfree
 rules:
 - MATCH,PROXIES

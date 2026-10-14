@@ -11,17 +11,33 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
+  type: vless
+  server: 185.86.145.142
+  port: 443
+  uuid: 7832b450-d561-45d6-b425-8527fa8babe0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n2.185-86-145-142.sslip.io
+  network: ws
+  ws-opts:
+    path: /e7ws
+    headers:
+      Host: n2.185-86-145-142.sslip.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Cloudfree
+  - 🇷🇺 俄罗斯 (Russia) 02 - Cloudfree
 rules:
 - MATCH,PROXIES
