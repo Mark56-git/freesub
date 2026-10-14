@@ -18,39 +18,17 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  type: vless
-  server: 206.1.102.81
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
-  type: vless
-  server: 206.1.102.81
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 02 - Cloudfree
-  - 🇹🇷 土耳其 (Turkey) 03 - Cloudfree
 rules:
 - MATCH,PROXIES
